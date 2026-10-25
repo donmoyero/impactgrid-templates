@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDUKATE — Empowering Future Leaders</title>
+  <meta name="description" content="EDUKATE is a premium education platform delivering world-class courses and training to students worldwide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__info">
+        <span><i class="fas fa-phone-alt"></i> +1 (555) 234-5678</span>
+        <span><i class="fas fa-envelope"></i> hello@edukate.com</span>
+        <span><i class="fas fa-clock"></i> Mon – Fri: 8:00 AM – 6:00 PM</span>
+      </div>
+      <div class="topbar__social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <div class="navbar__logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="navbar__brand-text">Edu<span>Kate</span></div>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html" class="navbar__link active">Home</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="courses.html" class="navbar__link">Courses</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+        <a href="courses.html" class="btn btn--primary btn--sm navbar__cta">Enroll Now</a>
+      </div>
+      <button class="navbar__burger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="assets/img/header.jpg" alt="Students collaborating in a modern classroom">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__cap-deco">
+      <svg viewBox="0 0 200 200" fill="white"><path d="M100 0 L200 60 L100 120 L0 60Z M100 140 L100 200 M30 80 L30 140 C30 170 170 170 170 140 L170 80"/></svg>
+    </div>
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <i class="fas fa-award"></i> Ranked #1 Online Learning Platform
+        </div>
+        <h1 class="hero__title">Shape Your <span>Future</span> With World-Class Education</h1>
+        <p class="hero__desc">Unlock your potential with expert-led courses designed to inspire, challenge, and prepare you for the careers of tomorrow.</p>
+        <div class="hero__actions">
+          <a href="courses.html" class="btn btn--primary btn--lg">Browse Courses</a>
+          <a href="about.html" class="btn btn--outline-white btn--lg">Learn More</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <span class="hero__stat-num" data-count="12500">0</span>
+            <span class="hero__stat-label">Students Enrolled</span>
+          </div>
+          <div>
+            <span class="hero__stat-num" data-count="85">0</span>
+            <span class="hero__stat-label">Expert Courses</span>
+          </div>
+          <div>
+            <span class="hero__stat-num" data-count="97">0</span>
+            <span class="hero__stat-label">% Success Rate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Courses -->
+  <section class="section-py">
+    <div class="container">
+      <div class="section-title text-center reveal">
+        <span class="section-title__label">Our Programs</span>
+        <h2>Explore Popular Courses</h2>
+        <p>Choose from dozens of expert-led programs designed to advance your career and sharpen your skills.</p>
+      </div>
+      <div class="courses-grid">
+        <!-- Course 1 -->
+        <div class="course-card reveal reveal-delay-1">
+          <div class="course-card__img">
+            <span class="course-card__badge">Popular</span>
+            <img src="assets/img/courses-1.jpg" alt="Web Development bootcamp session">
+            <div class="course-card__progress"><div class="course-card__progress-fill" style="width:65%"></div></div>
+          </div>
+          <div class="course-card__body">
+            <span class="course-card__category">Development</span>
+            <h3 class="course-card__title">Full-Stack Web Development</h3>
+            <div class="course-card__meta">
+              <span><i class="fas fa-user"></i> 1,240 Students</span>
+              <span><i class="fas fa-clock"></i> 12 Weeks</span>
+            </div>
+            <div class="course-card__footer">
+              <span class="course-card__price">$299 <small>$499</small></span>
+              <a href="courses.html" class="btn btn--primary btn--sm">Enroll</a>
+            </div>
+          </div>
+        </div>
+        <!-- Course 2 -->
+        <div class="course-card reveal reveal-delay-2">
+          <div class="course-card__img">
+            <span class="course-card__badge">New</span>
+            <img src="assets/img/courses-2.jpg" alt="Data science workshop with laptop screens">
+            <div class="course-card__progress"><div class="course-card__progress-fill" style="width:40%"></div></div>
+          </div>
+          <div class="course-card__body">
+            <span class="course-card__category">Data Science</span>
+            <h3 class="course-card__title">Data Analytics & Machine Learning</h3>
+            <div class="course-card__meta">
+              <span><i class="fas fa-user"></i> 890 Students</span>
+              <span><i class="fas fa-clock"></i> 10 Weeks</span>
+            </div>
+            <div class="course-card__footer">
+              <span class="course-card__price">$349 <small>$549</small></span>
+              <a href="courses.html" class="btn btn--primary btn--sm">Enroll</a>
+            </div>
+          </div>
+        </div>
+        <!-- Course 3 -->
+        <div class="course-card reveal reveal-delay-3">
+          <div class="course-card__img">
+            <span class="course-card__badge">Hot</span>
+            <img src="assets/img/courses-3.jpg" alt="UI/UX design tools on a large monitor">
+            <div class="course-card__progress"><div class="course-card__progress-fill" style="width:82%"></div></div>
+          </div>
+          <div class="course-card__body">
+            <span class="course-card__category">Design</span>
+            <h3 class="course-card__title">UI/UX Design Masterclass</h3>
+            <div class="course-card__meta">
+              <span><i class="fas fa-user"></i> 1,560 Students</span>
+              <span><i class="fas fa-clock"></i> 8 Weeks</span>
+            </div>
+            <div class="course-card__footer">
+              <span class="course-card__price">$249 <small>$449</small></span>
+              <a href="courses.html" class="btn btn--primary btn--sm">Enroll</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us / Features -->
+  <section class="features-section section-py">
+    <div class="container">
+      <div class="features-grid">
+        <div class="reveal">
+          <div class="section-title">
+            <span class="section-title__label">Why Choose Us</span>
+            <h2>Education That Makes a Difference</h2>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--blue"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div>
+              <h4>Expert Instructors</h4>
+              <p>Learn from industry professionals with real-world experience and a passion for teaching.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--red"><i class="fas fa-laptop-code"></i></div>
+            <div>
+              <h4>Hands-On Projects</h4>
+              <p>Build a portfolio of real projects that demonstrate your skills to future employers.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--dark"><i class="fas fa-certificate"></i></div>
+            <div>
+              <h4>Accredited Certificates</h4>
+              <p>Earn recognized certificates that validate your expertise and boost your resume.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--blue"><i class="fas fa-users"></i></div>
+            <div>
+              <h4>Community Support</h4>
+              <p>Join a global network of learners, mentors, and alumni who support each other.</p>
+            </div>
+          </div>
+        </div>
+        <div class="features-img reveal">
+          <img src="assets/img/feature.jpg" alt="Students working together on a group project">
+          <div class="progress-deco">
+            <div class="progress-deco__header">
+              <span>Course Completion</span>
+              <span>78%</span>
+            </div>
+            <div class="progress-deco__bar">
+              <div class="progress-deco__fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section-py">
+    <div class="container">
+      <div class="stats-row reveal">
+        <div class="stat-box">
+          <span class="stat-box__num" data-count="12500">0</span>
+          <span class="stat-box__label">Students</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-box__num" data-count="85">0</span>
+          <span class="stat-box__label">Courses</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-box__num" data-count="42">0</span>
+          <span class="stat-box__label">Instructors</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-box__num" data-count="97">0</span>
+          <span class="stat-box__label">% Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="features-section section-py">
+    <div class="container">
+      <div class="section-title text-center reveal">
+        <span class="section-title__label">Our Team</span>
+        <h2>Meet the Instructors</h2>
+        <p>Passionate educators committed to shaping the next generation of professionals.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-card__img">
+            <img src="assets/img/team-1.jpg" alt="Dr. Sarah Mitchell, Lead Instructor">
+            <div class="team-card__progress">
+              <div class="team-card__progress-bar"><div class="team-card__progress-fill" style="width:92%"></div></div>
+              <span>92%</span>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h4 class="team-card__name">Dr. Sarah Mitchell</h4>
+            <span class="team-card__role">Lead Instructor</span>
+            <div class="team-card__social">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-card__img">
+            <img src="assets/img/team-2.jpg" alt="Prof. James Carter, Senior Instructor">
+            <div class="team-card__progress">
+              <div class="team-card__progress-bar"><div class="team-card__progress-fill" style="width:88%"></div></div>
+              <span>88%</span>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h4 class="team-card__name">Prof. James Carter</h4>
+            <span class="team-card__role">Senior Instructor</span>
+            <div class="team-card__social">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-card__img">
+            <img src="assets/img/team-3.jpg" alt="Emily Rodriguez, Design Instructor">
+            <div class="team-card__progress">
+              <div class="team-card__progress-bar"><div class="team-card__progress-fill" style="width:95%"></div></div>
+              <span>95%</span>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h4 class="team-card__name">Emily Rodriguez</h4>
+            <span class="team-card__role">Design Instructor</span>
+            <div class="team-card__social">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-4">
+          <div class="team-card__img">
+            <img src="assets/img/team-4.jpg" alt="David Kim, Data Science Instructor">
+            <div class="team-card__progress">
+              <div class="team-card__progress-bar"><div class="team-card__progress-fill" style="width:90%"></div></div>
+              <span>90%</span>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h4 class="team-card__name">David Kim</h4>
+            <span class="team-card__role">Data Science Instructor</span>
+            <div class="team-card__social">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section section-py">
+    <div class="container">
+      <div class="testimonials-layout">
+        <div class="reveal">
+          <div class="section-title">
+            <span class="section-title__label">Testimonials</span>
+            <h2>What Our Students Say</h2>
+          </div>
+          <p style="color:var(--gray-500);margin-bottom:var(--gap-lg);">Hear from students who transformed their careers through our programs.</p>
+        </div>
+        <div class="reveal">
+          <div class="testimonial-card">
+            <p class="testimonial-card__quote">"EDUKATE completely changed my career trajectory. The full-stack bootcamp gave me the confidence and skills to land my dream job within three months of graduating."</p>
+            <div class="testimonial-card__author">
+              <img src="assets/img/testimonial-1.jpg" alt="Alex Turner" class="testimonial-card__avatar">
+              <div>
+                <div class="testimonial-card__name">Alex Turner</div>
+                <div class="testimonial-card__course">Full-Stack Web Development</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-card__quote">"The data analytics course was rigorous, practical, and taught by people who actually work in the field. I walked away with a portfolio that opened doors."</p>
+            <div class="testimonial-card__author">
+              <img src="assets/img/testimonial-2.jpg" alt="Maya Patel" class="testimonial-card__avatar">
+              <div>
+                <div class="testimonial-card__name">Maya Patel</div>
+                <div class="testimonial-card__course">Data Analytics & Machine Learning</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section-py">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Ready to Start Your Learning Journey?</h2>
+        <p>Join thousands of students who are building the skills for tomorrow's most in-demand careers.</p>
+        <a href="courses.html" class="btn btn--lg" style="background:var(--white);color:var(--blue);border-color:var(--white);">Enroll Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a href="index.html" class="footer__brand">
+            <div class="footer__brand-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="footer__brand-name">Edu<span>Kate</span></div>
+          </a>
+          <p class="footer__desc">Empowering learners worldwide with expert-led courses, hands-on projects, and accredited certifications.</p>
+          <div class="footer__newsletter">
+            <input type="email" placeholder="Your email address" aria-label="Email for newsletter">
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a>
+            <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Programs</h4>
+          <div class="footer__links">
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Web Development</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Data Science</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> UI/UX Design</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Digital Marketing</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact Us</h4>
+          <div class="footer__contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Learning Avenue, Education City, EC 45678</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (555) 234-5678</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>hello@edukate.com</span>
+          </div>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> EduKate. All rights reserved.</span>
+        <span>Designed with <i class="fas fa-heart" style="color:var(--red)"></i> for Education</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

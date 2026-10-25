@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book an appointment at PetLover — pet grooming, dog boarding, pet spa, and veterinary care. Simple online booking in minutes.">
+  <meta property="og:title" content="Book an Appointment — PetLover Pet Care">
+  <meta property="og:description" content="Book grooming, boarding, spa, or veterinary appointments at PetLover in minutes.">
+  <meta property="og:type" content="website">
+  <title>Book an Appointment — PetLover Pet Care</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐶</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🐾</span> PetLover
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="booking.html" class="nav-link">Booking</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO BANNER ===== -->
+    <section class="hero-banner">
+      <div class="container">
+        <h1>Book an Appointment</h1>
+        <p>Reserve your pet's next grooming, boarding, or vet visit in minutes.</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Booking</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BOOKING ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="reveal-left">
+            <span class="section-label">Book Online</span>
+            <h2 class="section-title">Schedule Your Visit</h2>
+            <p>Fill out the form and our team will confirm your appointment within a few hours. We'll make sure everything is ready for your pet's arrival.</p>
+            <ul class="contact-info-list">
+              <li class="contact-info-item">
+                <span class="contact-info-icon">🕐</span>
+                <div>
+                  <h4>Hours of Operation</h4>
+                  <p>Mon–Sat: 8:00 AM – 7:00 PM<br>Sunday: 9:00 AM – 3:00 PM</p>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <span class="contact-info-icon">📞</span>
+                <div>
+                  <h4>Call Us</h4>
+                  <p>(555) 123-4567<br>Prefer to book by phone? We're happy to help.</p>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <span class="contact-info-icon">📍</span>
+                <div>
+                  <h4>Visit Us</h4>
+                  <p>123 Pet Street, Paw City, PC 12345</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reveal-right">
+            <form class="form" data-form novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name *</label>
+                  <input type="text" id="name" name="name" placeholder="e.g. Jane Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" placeholder="e.g. (555) 123-4567" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="e.g. jane@example.com" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Service *</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select a service…</option>
+                    <option value="grooming">Pet Grooming</option>
+                    <option value="boarding">Dog Boarding</option>
+                    <option value="veterinary">Veterinary Care</option>
+                    <option value="spa">Pet Spa</option>
+                    <option value="training">Dog Training</option>
+                    <option value="taxi">Pet Taxi</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="date">Preferred Date *</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="pet-name">Pet's Name *</label>
+                  <input type="text" id="pet-name" name="pet-name" placeholder="e.g. Buddy" required>
+                </div>
+                <div class="form-group">
+                  <label for="pet-type">Pet Type</label>
+                  <select id="pet-type" name="pet-type">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="notes">Special Requests</label>
+                <textarea id="notes" name="notes" placeholder="Tell us about your pet's temperament, allergies, or any special needs…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Confirm Booking</button>
+              <p class="form-ok">✓ Thank you! Your booking request has been received. We'll confirm shortly.</p>
+              <p class="form-err">✗ Please fill in all required fields before submitting.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="logo-icon">🐾</span> PetLover</a>
+          <p>Professional pet grooming, boarding, and veterinary care services. Your furry friends deserve the very best.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Pet Grooming</a></li>
+            <li><a href="services.html">Dog Boarding</a></li>
+            <li><a href="services.html">Veterinary Care</a></li>
+            <li><a href="services.html">Pet Spa</a></li>
+            <li><a href="services.html">Dog Training</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><span>📍</span> 123 Pet Street, Paw City, PC 12345</li>
+            <li><span>📞</span> (555) 123-4567</li>
+            <li><span>✉️</span> hello@petlover.com</li>
+            <li><span>🕐</span> Mon–Sat: 8:00 AM – 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> PetLover. All rights reserved.</p>
+        <p>Template by <a href="https://uiuxlabz.com" target="_blank">uiuxlabz</a></p>
+      </div>
+    </div>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team — CloudBase Admin Panel</title>
+  <meta name="description" content="CloudBase team management — browse member cards, roles, skills and availability across your workspace.">
+  <meta name="keywords" content="team management, team grid, member cards, admin panel, cloudbase">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ====== TOP NAVBAR ====== -->
+  <header class="header">
+    <div class="container">
+      <nav>
+        <a href="index.html" class="nav-logo"><span class="logo-icon">☁</span>CloudBase</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Dashboard</a>
+          <a href="dashboard.html" class="nav-link">Analytics</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="team.html" class="nav-link active">Team</a>
+          <a href="settings.html" class="nav-link">Settings</a>
+        </div>
+        <div class="nav-cta">
+          <div class="header-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search projects, clients…" aria-label="Search">
+          </div>
+          <div class="user-dropdown" id="userDropdown">
+            <button class="user-dropdown-trigger" type="button" aria-expanded="false" aria-haspopup="true">
+              <img class="avatar" src="assets/img/user.jpg" alt="Sarah Chen avatar">
+              <span class="user-name">Sarah Chen</span>
+              <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="user-dropdown-menu" role="menu">
+              <a href="settings.html">👤 My Profile</a>
+              <a href="settings.html">⚙️ Account Settings</a>
+              <a href="team.html">👥 Manage Team</a>
+              <div class="dropdown-divider"></div>
+              <a href="404.html">🚪 Sign Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== PAGE HERO ====== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">Team Members 👥</h1>
+      <p class="page-subtitle">Meet the people building CloudBase — 286 members across 4 time zones.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+
+      <!-- ====== TEAM GRID ====== -->
+      <section class="team-grid" aria-label="Team member cards">
+        <article class="team-card reveal">
+          <img class="team-card-avatar" src="assets/img/user.jpg" alt="Sarah Chen" loading="lazy">
+          <h3 class="team-card-name">Sarah Chen</h3>
+          <p class="team-card-role">Product Manager</p>
+          <div class="team-card-skills">
+            <span>Strategy</span><span>Roadmap</span><span>Stakeholders</span>
+          </div>
+          <div class="team-card-social">
+            <a href="#" aria-label="Sarah on LinkedIn">in</a>
+            <a href="#" aria-label="Sarah on X">𝕏</a>
+            <a href="#" aria-label="Email Sarah">✉</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal d1">
+          <img class="team-card-avatar" src="assets/img/testimonial-1.jpg" alt="Maya Patel" loading="lazy">
+          <h3 class="team-card-name">Maya Patel</h3>
+          <p class="team-card-role">Lead Engineer</p>
+          <div class="team-card-skills">
+            <span>Node.js</span><span>Cloud</span><span>DevOps</span>
+          </div>
+          <div class="team-card-social">
+            <a href="#" aria-label="Maya on LinkedIn">in</a>
+            <a href="#" aria-label="Maya on X">𝕏</a>
+            <a href="#" aria-label="Email Maya">✉</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal d2">
+          <img class="team-card-avatar" src="assets/img/testimonial-2.jpg" alt="Liam Novak" loading="lazy">
+          <h3 class="team-card-name">Liam Novak</h3>
+          <p class="team-card-role">UX Designer</p>
+          <div class="team-card-skills">
+            <span>Figma</span><span>Prototyping</span><span>Research</span>
+          </div>
+          <div class="team-card-social">
+            <a href="#" aria-label="Liam on LinkedIn">in</a>
+            <a href="#" aria-label="Liam on X">𝕏</a>
+            <a href="#" aria-label="Email Liam">✉</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal d3">
+          <img class="team-card-avatar" src="assets/img/user.jpg" alt="Zoe Turner" loading="lazy">
+          <h3 class="team-card-name">Zoe Turner</h3>
+          <p class="team-card-role">Growth Lead</p>
+          <div class="team-card-skills">
+            <span>SEO</span><span>CRM</span><span>Lifecycle</span>
+          </div>
+          <div class="team-card-social">
+            <a href="#" aria-label="Zoe on LinkedIn">in</a>
+            <a href="#" aria-label="Zoe on X">𝕏</a>
+            <a href="#" aria-label="Email Zoe">✉</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal">
+          <img class="team-card-avatar" src="assets/img/testimonial-1.jpg" alt="Omar Haddad" loading="lazy">
+          <h3 class="team-card-name">Omar Haddad</h3>
+          <p class="team-card-role">Data Scientist</p>
+          <div class="team-card-skills">
+            <span>Python</span><span>ML</span><span>BI</span>
+          </div>
+          <div class="team-card-social">
+            <a href="#" aria-label="Omar on LinkedIn">in</a>
+            <a href="#" aria-label="Omar on X">𝕏</a>
+            <a href="#" aria-label="Email Omar">✉</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal d1">
+          <img class="team-card-avatar" src="assets/img/testimonial-2.jpg" alt="Emma Rossi" loading="lazy">
+          <h3 class="team-card-name">Emma Rossi</h3>
+          <p class="team-card-role">Customer Success</p>
+          <div class="team-card-skills">
+            <span>Onboarding</span><span>Support</span><span>CSAT</span>
+          </div>
+          <div class="team-card-social">
+            <a href="#" aria-label="Emma on LinkedIn">in</a>
+            <a href="#" aria-label="Emma on X">𝕏</a>
+            <a href="#" aria-label="Email Emma">✉</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal d2">
+          <img class="team-card-avatar" src="assets/img/user.jpg" alt="Daniel Kim" loading="lazy">
+          <h3 class="team-card-name">Daniel Kim</h3>
+          <p class="team-card-role">Frontend Engineer</p>
+          <div class="team-card-skills">
+            <span>React</span><span>TypeScript</span><span>Accessibility</span>
+          </div>
+          <div class="team-card-social">
+            <a href="#" aria-label="Daniel on LinkedIn">in</a>
+            <a href="#" aria-label="Daniel on X">𝕏</a>
+            <a href="#" aria-label="Email Daniel">✉</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal d3">
+          <img class="team-card-avatar" src="assets/img/testimonial-1.jpg" alt="Ana Sousa" loading="lazy">
+          <h3 class="team-card-name">Ana Sousa</h3>
+          <p class="team-card-role">Security Engineer</p>
+          <div class="team-card-skills">
+            <span>Audit</span><span>Zero-trust</span><span>Compliance</span>
+          </div>
+          <div class="team-card-social">
+            <a href="#" aria-label="Ana on LinkedIn">in</a>
+            <a href="#" aria-label="Ana on X">𝕏</a>
+            <a href="#" aria-label="Email Ana">✉</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ====== TEAM STATS ====== -->
+      <section class="section">
+        <div class="card reveal">
+          <div class="card-header">
+            <h3>📊 Team Snapshot</h3>
+            <span class="form-hint">This quarter</span>
+          </div>
+          <div class="card-body">
+            <div class="kpi-grid" style="margin-bottom:0">
+              <div class="kpi-card" style="border:none;background:var(--bg)">
+                <div class="kpi-icon kpi-icon--primary">🧑‍💻</div>
+                <div class="kpi-body">
+                  <div class="kpi-value">286</div>
+                  <div class="kpi-label">Total Members</div>
+                </div>
+              </div>
+              <div class="kpi-card" style="border:none;background:var(--bg)">
+                <div class="kpi-icon kpi-icon--success">✅</div>
+                <div class="kpi-body">
+                  <div class="kpi-value">94%</div>
+                  <div class="kpi-label">Capacity Utilized</div>
+                </div>
+              </div>
+              <div class="kpi-card" style="border:none;background:var(--bg)">
+                <div class="kpi-icon kpi-icon--purple">⏳</div>
+                <div class="kpi-body">
+                  <div class="kpi-value">12</div>
+                  <div class="kpi-label">Open Roles</div>
+                </div>
+              </div>
+              <div class="kpi-card" style="border:none;background:var(--bg)">
+                <div class="kpi-icon kpi-icon--dark">🌍</div>
+                <div class="kpi-body">
+                  <div class="kpi-value">4</div>
+                  <div class="kpi-label">Time Zones</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand">☁ CloudBase</span>
+          <p>A modern SaaS admin panel — clean card-based layout, KPI metrics, project management, team and settings in one template.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="dashboard.html">Analytics</a><br>
+          <a href="projects.html">Projects</a><br>
+          <a href="team.html">Team</a><br>
+          <a href="settings.html">Settings</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="404.html">Documentation</a><br>
+          <a href="404.html">API Reference</a><br>
+          <a href="404.html">Changelog</a><br>
+          <a href="404.html">Status</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="team.html">About Us</a><br>
+          <a href="settings.html">Contact</a><br>
+          <a href="404.html">Privacy</a><br>
+          <a href="404.html">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> CloudBase. All rights reserved.</span>
+        <span>Framework-free · Responsive · Production-ready</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

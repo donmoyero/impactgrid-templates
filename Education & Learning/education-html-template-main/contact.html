@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — EDUKATE</title>
+  <meta name="description" content="Get in touch with EDUKATE. Our team is ready to answer your questions about courses, enrollment, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__info">
+        <span><i class="fas fa-phone-alt"></i> +1 (555) 234-5678</span>
+        <span><i class="fas fa-envelope"></i> hello@edukate.com</span>
+        <span><i class="fas fa-clock"></i> Mon – Fri: 8:00 AM – 6:00 PM</span>
+      </div>
+      <div class="topbar__social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <div class="navbar__logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="navbar__brand-text">Edu<span>Kate</span></div>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="courses.html" class="navbar__link">Courses</a>
+        <a href="contact.html" class="navbar__link active">Contact</a>
+        <a href="courses.html" class="btn btn--primary btn--sm navbar__cta">Enroll Now</a>
+      </div>
+      <button class="navbar__burger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header__bg">
+      <img src="assets/img/page-header.jpg" alt="EDUKATE campus reception area">
+    </div>
+    <div class="page-header__overlay"></div>
+    <div class="container page-header__content">
+      <h1>Contact Us</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-py">
+    <div class="container">
+      <div class="section-title text-center reveal">
+        <span class="section-title__label">Get In Touch</span>
+        <h2>We'd Love to Hear From You</h2>
+        <p>Have a question about our courses or programs? Reach out and our team will respond within 24 hours.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Info Cards -->
+        <div class="reveal">
+          <div class="contact-info-card">
+            <div class="contact-info-item">
+              <div class="contact-info-item__icon contact-info-item__icon--blue">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Our Campus</h4>
+                <p>123 Learning Avenue<br>Education City, EC 45678</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-item__icon contact-info-item__icon--red">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h4>Call Us</h4>
+                <p>+1 (555) 234-5678<br>+1 (555) 876-5432</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-item__icon contact-info-item__icon--dark">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email Us</h4>
+                <p>hello@edukate.com<br>support@edukate.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-item__icon contact-info-item__icon--blue">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Monday – Friday: 8:00 AM – 6:00 PM<br>Saturday: 9:00 AM – 1:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal">
+          <h3>Send Us a Message</h3>
+          <p>Fill out the form below and we'll get back to you promptly.</p>
+          <form data-form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <select id="contact-subject" class="form-input" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option>Course Inquiry</option>
+                <option>Enrollment Assistance</option>
+                <option>Partnership Opportunity</option>
+                <option>General Question</option>
+                <option>Feedback</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-input" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section-py">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Ready to Take the Next Step?</h2>
+        <p>Explore our course catalog and find the program that's right for your career goals.</p>
+        <a href="courses.html" class="btn btn--lg" style="background:var(--white);color:var(--blue);border-color:var(--white);">View Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a href="index.html" class="footer__brand">
+            <div class="footer__brand-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="footer__brand-name">Edu<span>Kate</span></div>
+          </a>
+          <p class="footer__desc">Empowering learners worldwide with expert-led courses, hands-on projects, and accredited certifications.</p>
+          <div class="footer__newsletter">
+            <input type="email" placeholder="Your email address" aria-label="Email for newsletter">
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a>
+            <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Programs</h4>
+          <div class="footer__links">
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Web Development</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Data Science</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> UI/UX Design</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Digital Marketing</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact Us</h4>
+          <div class="footer__contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Learning Avenue, Education City, EC 45678</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (555) 234-5678</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>hello@edukate.com</span>
+          </div>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> EduKate. All rights reserved.</span>
+        <span>Designed with <i class="fas fa-heart" style="color:var(--red)"></i> for Education</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

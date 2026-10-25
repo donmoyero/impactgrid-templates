@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoofari — A Modern Safari &amp; Wildlife Park</title>
+  <meta name="description" content="Zoofari is a modern zoo and wildlife park where nature meets wonder. Discover 120+ species, immersive exhibits, keeper talks and family adventures every day.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <meta name="theme-color" content="#16301f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Zoofari home">
+        <span class="brand-mark" aria-hidden="true">🦁</span>
+        Zoo<em>fari</em>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="site-nav">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="animal.html">Animals</a></li>
+        <li><a class="nav-link" href="visiting.html">Visit</a></li>
+        <li><a class="nav-link" href="membership.html">Membership</a></li>
+        <li><a class="nav-link" href="service.html">Services</a></li>
+        <li><a class="nav-link" href="testimonial.html">Reviews</a></li>
+        <li class="nav-cta"><a class="btn btn--primary btn--arrow" href="visiting.html">Book Tickets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO (crossfade) ================= -->
+    <section class="hero" aria-label="Welcome to Zoofari">
+      <div class="hero-bg">
+        <img src="assets/img/bg-1.jpg" alt="Golden savanna at Zoofari wildlife park" class="active">
+        <img src="assets/img/bg-2.jpg" alt="Lush forest trail inside Zoofari park">
+      </div>
+      <div class="hero-inner">
+        <span class="hero-eyebrow reveal">🌿 Open daily · 9:00 AM – 6:00 PM</span>
+        <h1 class="hero-title reveal" data-delay="1">Step Into a World of <em class="serif-italic">Wild Wonder</em></h1>
+        <p class="hero-sub reveal" data-delay="2">Zoofari is a modern wildlife park where 120+ species roam natural, immersive habitats — and every visit becomes an adventure worth roaring about.</p>
+        <div class="hero-actions reveal" data-delay="3">
+          <a class="btn btn--primary btn--arrow" href="visiting.html">Plan Your Visit</a>
+          <a class="btn btn--light" href="animal.html">Meet the Animals</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HERO TICKET STRIP ================= -->
+    <section class="container hero-strip" aria-label="Park highlights at a glance">
+      <div class="strip-card reveal">
+        <div class="strip-item">
+          <span class="strip-icon" aria-hidden="true">🕘</span>
+          <div>
+            <span class="strip-label">Opening Hours</span>
+            <div class="strip-value">9 AM – 6 PM</div>
+          </div>
+        </div>
+        <div class="strip-item">
+          <span class="strip-icon" aria-hidden="true">🐾</span>
+          <div>
+            <span class="strip-label">Species &amp; Exhibits</span>
+            <div class="strip-value">120+ Animals</div>
+          </div>
+        </div>
+        <div class="strip-item">
+          <span class="strip-icon" aria-hidden="true">🎟️</span>
+          <div>
+            <span class="strip-label">Day Pass</span>
+            <div class="strip-value">From $24</div>
+          </div>
+        </div>
+        <div class="strip-item">
+          <span class="strip-icon" aria-hidden="true">🚌</span>
+          <div>
+            <span class="strip-label">Guided Tours</span>
+            <div class="strip-value">Every Hour</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INTRO / ABOUT ================= -->
+    <section class="section">
+      <div class="container split">
+        <div class="split-media reveal">
+          <div class="frame">
+            <img src="assets/img/about.jpg" alt="Zoofari park ranger with a friendly animal" loading="lazy">
+          </div>
+          <div class="media-stamp">
+            <b>30+</b>
+            <span>Years of Care</span>
+          </div>
+        </div>
+        <div class="split-body reveal" data-delay="1">
+          <span class="eyebrow">Welcome to Zoofari</span>
+          <h2>Conservation, Connection &amp; <em class="serif-italic">Curiosity</em></h2>
+          <p>Nestled in rolling green hills, Zoofari is more than a zoo — it's a sanctuary built around the idea that when people connect with wildlife, they protect it. Wander open savanna plains, step into misty rainforests, and watch the world's most remarkable animals thrive.</p>
+          <ul class="check-list">
+            <li>Natural, immersive habitats designed around animal wellbeing</li>
+            <li>Daily keeper talks, feeding sessions and safari-style tours</li>
+            <li>Hands-on education programs for schools and families</li>
+            <li>Global conservation partnerships protecting wild places</li>
+          </ul>
+          <a class="btn btn--dark btn--arrow" href="about.html">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SPECIES SHOWCASE ================= -->
+    <section class="section band">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Meet the Residents</span>
+          <h2 class="section-title">Stars of the <em class="serif-italic">Savanna</em></h2>
+          <p class="section-lead">A glimpse of the incredible species waiting for you around every bend of the trail.</p>
+        </div>
+        <div class="species-grid">
+          <article class="species-card reveal">
+            <div class="species-media">
+              <img src="assets/img/animal-lg-1.jpg" alt="Majestic lion resting in the grass" loading="lazy">
+              <span class="species-tag">Big Cats</span>
+            </div>
+            <div class="species-body">
+              <h3>African Lion</h3>
+              <div class="species-sci">Panthera leo</div>
+              <p class="species-desc">The undisputed king of the savanna — meet our pride during the daily 11 AM feeding.</p>
+              <div class="species-meta">
+                <span>📍 Savanna Plains</span>
+                <span>🕚 Keeper Talk 11 AM</span>
+              </div>
+            </div>
+          </article>
+          <article class="species-card reveal" data-delay="1">
+            <div class="species-media">
+              <img src="assets/img/animal-lg-2.jpg" alt="Gentle elephant wandering the park" loading="lazy">
+              <span class="species-tag">Giants</span>
+            </div>
+            <div class="species-body">
+              <h3>African Elephant</h3>
+              <div class="species-sci">Loxodonta africana</div>
+              <p class="species-desc">Watch our gentle giants splash, forage and connect in the largest habitat on site.</p>
+              <div class="species-meta">
+                <span>📍 Elephant Valley</span>
+                <span>🕚 Bath Time 2 PM</span>
+              </div>
+            </div>
+          </article>
+          <article class="species-card reveal" data-delay="2">
+            <div class="species-media">
+              <img src="assets/img/animal-lg-3.jpg" alt="Tall giraffe reaching for acacia leaves" loading="lazy">
+              <span class="species-tag">Skyline</span>
+            </div>
+            <div class="species-body">
+              <h3>Reticulated Giraffe</h3>
+              <div class="species-sci">Giraffa reticulata</div>
+              <p class="species-desc">Tower over the treeline and feed a giraffe face-to-face on our elevated platform.</p>
+              <div class="species-meta">
+                <span>📍 Giraffe Lookout</span>
+                <span>🕚 Feed 1 PM</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div style="text-align:center; margin-top: var(--space-5);" class="reveal">
+          <a class="btn btn--dark btn--arrow" href="animal.html">Explore All Animals</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES / SERVICES ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Why Zoofari</span>
+          <h2 class="section-title">An Adventure For <em class="serif-italic">Everyone</em></h2>
+          <p class="section-lead">From dawn safaris to twilight lantern walks — every corner of the park is made for discovery.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/img/icon-1.png" alt="Safari tour icon"></div>
+            <h3>Safari Tours</h3>
+            <p>Hop aboard our open-air safari trucks for a guided ride across the plains with expert rangers.</p>
+          </div>
+          <div class="feature-card reveal" data-delay="1">
+            <div class="feature-icon"><img src="assets/img/icon-2.png" alt="Education program icon"></div>
+            <h3>Education Programs</h3>
+            <p>Hands-on classrooms, conservation labs and ranger camps that bring wildlife science to life.</p>
+          </div>
+          <div class="feature-card reveal" data-delay="2">
+            <div class="feature-icon"><img src="assets/img/icon-3.png" alt="Family fun icon"></div>
+            <h3>Family Zones</h3>
+            <p>Playgrounds, splash pads and meet-the-critters corners designed for little explorers.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><img src="assets/img/icon-4.png" alt="Birthday party icon"></div>
+            <h3>Wild Birthday Parties</h3>
+            <p>Celebrate with private pavilions, animal encounters and a day pass for every guest.</p>
+          </div>
+          <div class="feature-card reveal" data-delay="1">
+            <div class="feature-icon"><img src="assets/img/icon-5.png" alt="Cafeteria icon"></div>
+            <h3>Savanna Cafés</h3>
+            <p>Fresh, locally-sourced bites with sweeping views over the elephant and giraffe habitats.</p>
+          </div>
+          <div class="feature-card reveal" data-delay="2">
+            <div class="feature-icon"><img src="assets/img/icon-6.png" alt="Night safari icon"></div>
+            <h3>Twilight Safaris</h3>
+            <p>After the gates close, watch the park come alive under the stars on a special night tour.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ANIMAL MEDIA BAND ================= -->
+    <section class="section band--dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Habitat Diaries</span>
+          <h2 class="section-title">Life Inside The <em class="serif-italic">Enclosure</em></h2>
+          <p class="section-lead">Peek behind the scenes at how our keepers care for the world's most amazing creatures.</p>
+        </div>
+        <div class="media-grid">
+          <article class="media-card reveal">
+            <div class="media-frame"><img src="assets/img/animal-md-1.jpg" alt="Keeper caring for a young animal" loading="lazy"></div>
+            <div class="media-body">
+              <h3>Keeper for a Day</h3>
+              <p>Shadow our rangers and prepare enrichment, feeds and habitats alongside the pros.</p>
+            </div>
+          </article>
+          <article class="media-card reveal" data-delay="1">
+            <div class="media-frame"><img src="assets/img/animal-md-2.jpg" alt="Young visitor meeting wildlife" loading="lazy"></div>
+            <div class="media-body">
+              <h3>Little Explorers Club</h3>
+              <p>Junior rangers earn badges as they complete animal missions across the park.</p>
+            </div>
+          </article>
+          <article class="media-card reveal" data-delay="2">
+            <div class="media-frame"><img src="assets/img/animal-md-3.jpg" alt="Team of animals in their habitat" loading="lazy"></div>
+            <div class="media-body">
+              <h3>Conservation in Action</h3>
+              <p>From rescue releases to breeding programs, see how your visit protects wild animals.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="section stats" aria-label="Zoofari by the numbers">
+      <div class="container stats-grid">
+        <div class="stat-item reveal">
+          <b>120+</b>
+          <span>Animal Species</span>
+        </div>
+        <div class="stat-item reveal" data-delay="1">
+          <b>18</b>
+          <span>Natural Habitats</span>
+        </div>
+        <div class="stat-item reveal" data-delay="2">
+          <b>400K</b>
+          <span>Visitors Yearly</span>
+        </div>
+        <div class="stat-item reveal" data-delay="3">
+          <b>60+</b>
+          <span>Conservation Projects</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS PREVIEW ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Guest Stories</span>
+          <h2 class="section-title">Roars of <em class="serif-italic">Approval</em></h2>
+          <p class="section-lead">Thousands of families visit every year. Here's what they say when they get home.</p>
+        </div>
+        <div class="quote-grid">
+          <figure class="quote-card reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="quote-text">The giraffe feeding platform was the highlight of our year. Staff were so knowledgeable and the animals clearly loved, cared for.</blockquote>
+            <figcaption class="quote-author">
+              <span class="quote-avatar"><img src="assets/img/testimonial-1.jpg" alt="Portrait of Sarah Mitchell" loading="lazy"></span>
+              <span><b>Sarah Mitchell</b><small>Family Visit · Summer</small></span>
+            </figcaption>
+          </figure>
+          <figure class="quote-card reveal" data-delay="1">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="quote-text">Beautifully designed habitats and the twilight safari is unforgettable. You can tell the animals come first here.</blockquote>
+            <figcaption class="quote-author">
+              <span class="quote-avatar"><img src="assets/img/testimonial-2.jpg" alt="Portrait of David Okafor" loading="lazy"></span>
+              <span><b>David Okafor</b><small>Twilight Safari · Spring</small></span>
+            </figcaption>
+          </figure>
+          <figure class="quote-card reveal" data-delay="2">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="quote-text">Our daughter's birthday here was flawless — the ranger-led animal encounter made her entire school jealous.</blockquote>
+            <figcaption class="quote-author">
+              <span class="quote-avatar"><img src="assets/img/testimonial-3.jpg" alt="Portrait of Emily Chen" loading="lazy"></span>
+              <span><b>Emily Chen</b><small>Birthday Party · Autumn</small></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div style="text-align:center; margin-top: var(--space-5);" class="reveal">
+          <a class="btn btn--ghost btn--arrow" href="testimonial.html">Read More Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA BAND ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Your Wildest Day Out Starts Here</h2>
+          <p>Book your tickets online, grab a free park map, and start your adventure before you even arrive.</p>
+          <div class="cta-actions">
+            <a class="btn btn--primary btn--arrow" href="visiting.html">Buy Day Passes</a>
+            <a class="btn btn--light" href="membership.html">Become a Member</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">🦁</span>
+            Zoo<em>fari</em>
+          </a>
+          <p class="footer-blurb">A modern wildlife park where nature meets wonder. Explore, learn and protect the wild — one unforgettable visit at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="animal.html">Our Animals</a></li>
+            <li><a href="visiting.html">Plan Your Visit</a></li>
+            <li><a href="testimonial.html">Guest Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="visiting.html">Opening Hours</a></li>
+            <li><a href="visiting.html">Tickets &amp; Passes</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="service.html">Services &amp; Tours</a></li>
+            <li><a href="visiting.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Wild Updates</h4>
+          <p class="footer-blurb" style="margin-bottom:0.8rem;">Join the herd — seasonal news, keeper stories and members-only offers.</p>
+          <form class="footer-newsletter" data-form novalidate>
+            <label class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);" for="newsletter-email">Email address</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+            <button type="submit" class="btn btn--primary">Join</button>
+            <p class="form-ok" role="status">Welcome to the herd! Check your inbox. 🦒</p>
+            <p class="form-err" role="alert">Please enter your email address.</p>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Zoofari Wildlife Park. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://uiuxlabz.com" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+          <a href="https://uiuxlabz.com" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+          <a href="https://uiuxlabz.com" aria-label="YouTube" target="_blank" rel="noopener">YT</a>
+          <a href="https://uiuxlabz.com" aria-label="Twitter" target="_blank" rel="noopener">TW</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

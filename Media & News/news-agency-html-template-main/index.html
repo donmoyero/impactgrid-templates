@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEWSERS — The World, Unfiltered</title>
+  <meta name="description" content="NEWSERS is a global news agency delivering unfiltered reporting from bureaus worldwide. Breaking news, investigative journalism, and press wire services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Breaking Ticker -->
+  <div class="ticker" role="marquee" aria-label="Breaking news ticker">
+    <div class="ticker__label">Breaking</div>
+    <div class="ticker__track">
+      <span class="ticker__item">UN General Assembly convenes emergency session on climate relief funding</span>
+      <span class="ticker__item">Global markets rally as central banks signal rate stability through Q4</span>
+      <span class="ticker__item">Major cybersecurity breach impacts financial institutions across three continents</span>
+      <span class="ticker__item">Space agency confirms water ice deposits on lunar south pole</span>
+      <span class="ticker__item">International summit addresses AI governance framework proposals</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__brand">
+        <div class="header__logo">News<span>ers</span></div>
+        <div class="header__tagline">The World, Unfiltered</div>
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="services.html" class="header__nav-link">Services</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+
+      <div class="header__cta">
+        <a href="contact.html" class="btn btn--primary btn--sm">Get a Quote</a>
+      </div>
+
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="services.html" class="mobile-nav__link">Services</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+    <div class="mobile-nav__cta">
+      <a href="contact.html" class="btn btn--primary">Get a Quote</a>
+    </div>
+  </div>
+
+  <!-- Hero: Lead Story + Sidebar -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__lead reveal-scale">
+          <img src="assets/img/banner-img.jpg" alt="Lead story - Global summit on cybersecurity" loading="eager">
+          <div class="hero__lead-overlay"></div>
+          <div class="hero__lead-content">
+            <span class="hero__lead-badge">Exclusive</span>
+            <h1 class="hero__lead-title">Inside the Race to Secure Global Digital Infrastructure</h1>
+            <p class="hero__lead-excerpt">An unprecedented coalition of 47 nations has agreed to a binding treaty on cybersecurity standards, marking the most significant digital governance milestone in a decade.</p>
+            <div class="hero__lead-meta">
+              <span class="author">By Sarah Mitchell</span>
+              <time datetime="2026-08-30">Aug 30, 2026</time>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__sidebar">
+          <a href="#" class="hero__sidebar-item reveal-right">
+            <img src="assets/img/news-1.jpg" alt="Climate conference">
+            <div class="hero__sidebar-item-text">
+              <h3>Climate Conference Yields Historic Carbon Agreement</h3>
+              <span>12 min ago</span>
+            </div>
+          </a>
+          <a href="#" class="hero__sidebar-item reveal-right">
+            <img src="assets/img/news-2.jpg" alt="Tech merger">
+            <div class="hero__sidebar-item-text">
+              <h3>Two Tech Giants Announce $80B Merger Amid Antitrust Scrutiny</h3>
+              <span>34 min ago</span>
+            </div>
+          </a>
+          <a href="#" class="hero__sidebar-item reveal-right">
+            <img src="assets/img/news-3.jpg" alt="Space exploration">
+            <div class="hero__sidebar-item-text">
+              <h3>Private Space Firm Achieves First Reusable Orbital Vehicle</h3>
+              <span>1 hour ago</span>
+            </div>
+          </a>
+          <a href="#" class="hero__sidebar-item reveal-right">
+            <img src="assets/img/news-4.jpg" alt="Global markets">
+            <div class="hero__sidebar-item-text">
+              <h3>Asian Markets Surge on New Trade Agreement Framework</h3>
+              <span>2 hours ago</span>
+            </div>
+          </a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wire Feed Grid -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="wire-feed__header reveal">
+        <div>
+          <div class="section-label">Latest Dispatches</div>
+          <h2 class="section-title">Wire Feed</h2>
+        </div>
+        <a href="#" class="btn btn--outline btn--sm">View All Stories</a>
+      </div>
+
+      <div class="wire-feed__grid">
+        <article class="wire-card wire-card--featured reveal">
+          <div class="wire-card__img">
+            <img src="assets/img/banner-2.jpg" alt="International diplomacy summit">
+            <span class="wire-card__category">World</span>
+          </div>
+          <div class="wire-card__body">
+            <h3 class="wire-card__title">Diplomatic Breakthrough: Peace Talks Resume After 18-Month Hiatus</h3>
+            <p class="wire-card__excerpt">Negotiators from both sides have returned to the table in Geneva, with international mediators expressing cautious optimism about the latest round of discussions that could reshape the regional power balance.</p>
+            <div class="wire-card__meta">
+              <span class="author">James Ortega</span>
+              <time datetime="2026-08-30">Aug 30, 2026</time>
+            </div>
+          </div>
+        </article>
+
+        <article class="wire-card reveal">
+          <div class="wire-card__img">
+            <img src="assets/img/features-technology.jpg" alt="AI regulation">
+            <span class="wire-card__category">Technology</span>
+          </div>
+          <div class="wire-card__body">
+            <h3 class="wire-card__title">EU Passes Landmark AI Transparency Act</h3>
+            <p class="wire-card__excerpt">New legislation requires all AI systems to disclose training data sources and algorithmic decision-making processes.</p>
+            <div class="wire-card__meta">
+              <span class="author">Lena Brandt</span>
+              <time datetime="2026-08-30">Aug 30, 2026</time>
+            </div>
+          </div>
+        </article>
+
+        <article class="wire-card reveal">
+          <div class="wire-card__img">
+            <img src="assets/img/features-sports-1.jpg" alt="Olympic preparations">
+            <span class="wire-card__category">Sports</span>
+          </div>
+          <div class="wire-card__body">
+            <h3 class="wire-card__title">Olympic Committee Unveils Sustainable Venue Designs for 2032</h3>
+            <p class="wire-card__excerpt">All competition venues will be powered entirely by renewable energy, setting a new standard for international sporting events.</p>
+            <div class="wire-card__meta">
+              <span class="author">Carlos Vega</span>
+              <time datetime="2026-08-30">Aug 30, 2026</time>
+            </div>
+          </div>
+        </article>
+
+        <article class="wire-card reveal">
+          <div class="wire-card__img">
+            <img src="assets/img/features-fashion.jpg" alt="Fashion industry">
+            <span class="wire-card__category">Lifestyle</span>
+          </div>
+          <div class="wire-card__body">
+            <h3 class="wire-card__title">Sustainable Fashion Movement Reaches Tipping Point</h3>
+            <p class="wire-card__excerpt">Major retailers commit to full supply chain transparency by 2028 as consumer demand for ethical fashion surges.</p>
+            <div class="wire-card__meta">
+              <span class="author">Priya Sharma</span>
+              <time datetime="2026-08-30">Aug 30, 2026</time>
+            </div>
+          </div>
+        </article>
+
+        <article class="wire-card reveal">
+          <div class="wire-card__img">
+            <img src="assets/img/features-life-style.jpg" alt="Health research">
+            <span class="wire-card__category">Health</span>
+          </div>
+          <div class="wire-card__body">
+            <h3 class="wire-card__title">Global Life Expectancy Rises for First Time Since 2019</h3>
+            <p class="wire-card__excerpt">New WHO data shows a 2.3-year increase in average life expectancy, driven by vaccine access and healthcare investment.</p>
+            <div class="wire-card__meta">
+              <span class="author">Dr. Amina Osei</span>
+              <time datetime="2026-08-30">Aug 30, 2026</time>
+            </div>
+          </div>
+        </article>
+
+        <article class="wire-card reveal">
+          <div class="wire-card__img">
+            <img src="assets/img/news-5.jpg" alt="Energy sector">
+            <span class="wire-card__category">Economy</span>
+          </div>
+          <div class="wire-card__body">
+            <h3 class="wire-card__title">Renewable Energy Investments Surpass Fossil Fuels for Third Year</h3>
+            <p class="wire-card__excerpt">Clean energy funding reaches $1.2 trillion globally, accelerating the transition in emerging markets.</p>
+            <div class="wire-card__meta">
+              <span class="author">Michael Torres</span>
+              <time datetime="2026-08-30">Aug 30, 2026</time>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Section: World News + Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="category-section">
+        <div>
+          <div class="section-label reveal">World News</div>
+          <h2 class="section-title reveal" style="margin-bottom:var(--sp-xl)">Global Coverage</h2>
+          <div class="category-section__main">
+            <a href="#" class="category-card reveal-left">
+              <div class="category-card__img">
+                <img src="assets/img/news-6.jpg" alt="Diplomacy">
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Diplomatic Tensions Rise Over Arctic Resource Claims</h3>
+                <span class="category-card__meta">3 hours ago</span>
+              </div>
+            </a>
+            <a href="#" class="category-card reveal-left">
+              <div class="category-card__img">
+                <img src="assets/img/news-7.jpg" alt="Economy">
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Central Banks Coordinate on Digital Currency Standards</h3>
+                <span class="category-card__meta">5 hours ago</span>
+              </div>
+            </a>
+            <a href="#" class="category-card reveal-left">
+              <div class="category-card__img">
+                <img src="assets/img/news-8.jpg" alt="Environment">
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Amazon Reforestation Initiative Shows Measurable Impact</h3>
+                <span class="category-card__meta">6 hours ago</span>
+              </div>
+            </a>
+            <a href="#" class="category-card reveal-left">
+              <div class="category-card__img">
+                <img src="assets/img/lifestyle-1.jpg" alt="Culture">
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Cultural Heritage Sites Receive UN Protection Upgrade</h3>
+                <span class="category-card__meta">8 hours ago</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <aside>
+          <div class="sidebar-ad reveal-right">
+            <img src="assets/img/newsletter-1.jpg" alt="NEWSERS Weekly Digest" style="width:100%;max-width:200px">
+            <h4>NEWSERS Weekly Digest</h4>
+            <p>Get the week's most important stories delivered to your inbox every Sunday.</p>
+            <a href="contact.html" class="btn btn--primary btn--sm">Subscribe Now</a>
+          </div>
+
+          <div class="sidebar-trending reveal-right" style="margin-top:var(--sp-lg)">
+            <h3>Trending Now</h3>
+            <div class="trending-item">
+              <span class="trending-item__num">01</span>
+              <div>
+                <div class="trending-item__title">Quantum Computing Breakthrough Promises Faster Drug Discovery</div>
+                <span class="trending-item__meta">14.2k reads</span>
+              </div>
+            </div>
+            <div class="trending-item">
+              <span class="trending-item__num">02</span>
+              <div>
+                <div class="trending-item__title">Ocean Cleanup Project Removes 100,000 Tons of Plastic</div>
+                <span class="trending-item__meta">11.8k reads</span>
+              </div>
+            </div>
+            <div class="trending-item">
+              <span class="trending-item__num">03</span>
+              <div>
+                <div class="trending-item__title">Urban Farming Initiative Transforms Former Industrial Zones</div>
+                <span class="trending-item__meta">9.5k reads</span>
+              </div>
+            </div>
+            <div class="trending-item">
+              <span class="trending-item__num">04</span>
+              <div>
+                <div class="trending-item__title">Satellite Network Improves Disaster Response Time by 60%</div>
+                <span class="trending-item__meta">8.1k reads</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="newsletter reveal-scale">
+        <div class="newsletter__grid">
+          <div class="newsletter__img">
+            <img src="assets/img/features-background.jpg" alt="Global newsroom">
+          </div>
+          <div class="newsletter__content">
+            <div class="section-label">Stay Informed</div>
+            <h2 class="section-title">The World, Unfiltered</h2>
+            <p>Subscribe to the NEWSERS daily briefing. No spin, no bias — just the stories that matter, delivered straight to your inbox at 6 AM.</p>
+            <form class="newsletter__form" data-form>
+              <input type="email" placeholder="your@email.com" required aria-label="Email address">
+              <button type="submit" class="btn btn--primary">Subscribe</button>
+            </form>
+            <p class="newsletter__note">Join 240,000+ readers. Unsubscribe anytime. We respect your inbox.</p>
+            <div class="form-ok">Welcome aboard! Check your inbox for a confirmation.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="header__logo">News<span>ers</span></div>
+          <p>Independent journalism since 2012. Delivering unfiltered reporting from bureaus across six continents.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="RSS">RSS</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Economy</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Health</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Ethics Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Press Releases</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2026</span> NEWSERS Agency. All rights reserved.</span>
+        <span>Designed for the independent press.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

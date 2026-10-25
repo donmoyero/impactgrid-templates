@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses — EDUKATE</title>
+  <meta name="description" content="Browse expert-led courses in web development, data science, and UI/UX design at EDUKATE.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__info">
+        <span><i class="fas fa-phone-alt"></i> +1 (555) 234-5678</span>
+        <span><i class="fas fa-envelope"></i> hello@edukate.com</span>
+        <span><i class="fas fa-clock"></i> Mon – Fri: 8:00 AM – 6:00 PM</span>
+      </div>
+      <div class="topbar__social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <div class="navbar__logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="navbar__brand-text">Edu<span>Kate</span></div>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="courses.html" class="navbar__link active">Courses</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+        <a href="courses.html" class="btn btn--primary btn--sm navbar__cta">Enroll Now</a>
+      </div>
+      <button class="navbar__burger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header__bg">
+      <img src="assets/img/page-header.jpg" alt="Students in a modern learning environment">
+    </div>
+    <div class="page-header__overlay"></div>
+    <div class="container page-header__content">
+      <h1>Our Courses</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Courses</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Listing -->
+  <section class="section-py">
+    <div class="container">
+      <div class="section-title text-center reveal">
+        <span class="section-title__label">Course Catalog</span>
+        <h2>Programs Designed for Your Success</h2>
+        <p>Each course combines expert instruction, real-world projects, and ongoing mentorship to ensure you achieve your goals.</p>
+      </div>
+      <div class="courses-grid">
+        <!-- Course 1 -->
+        <div class="course-card reveal reveal-delay-1">
+          <div class="course-card__img">
+            <span class="course-card__badge">Popular</span>
+            <img src="assets/img/courses-1.jpg" alt="Web development students building responsive sites">
+            <div class="course-card__progress"><div class="course-card__progress-fill" style="width:65%"></div></div>
+          </div>
+          <div class="course-card__body">
+            <span class="course-card__category">Development</span>
+            <h3 class="course-card__title">Full-Stack Web Development</h3>
+            <div class="course-card__meta">
+              <span><i class="fas fa-user"></i> 1,240 Students</span>
+              <span><i class="fas fa-clock"></i> 12 Weeks</span>
+            </div>
+            <div class="course-card__footer">
+              <span class="course-card__price">$299 <small>$499</small></span>
+              <a href="#" class="btn btn--primary btn--sm">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Course 2 -->
+        <div class="course-card reveal reveal-delay-2">
+          <div class="course-card__img">
+            <span class="course-card__badge">New</span>
+            <img src="assets/img/courses-2.jpg" alt="Data science students analyzing datasets on dual monitors">
+            <div class="course-card__progress"><div class="course-card__progress-fill" style="width:40%"></div></div>
+          </div>
+          <div class="course-card__body">
+            <span class="course-card__category">Data Science</span>
+            <h3 class="course-card__title">Data Analytics & Machine Learning</h3>
+            <div class="course-card__meta">
+              <span><i class="fas fa-user"></i> 890 Students</span>
+              <span><i class="fas fa-clock"></i> 10 Weeks</span>
+            </div>
+            <div class="course-card__footer">
+              <span class="course-card__price">$349 <small>$549</small></span>
+              <a href="#" class="btn btn--primary btn--sm">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Course 3 -->
+        <div class="course-card reveal reveal-delay-3">
+          <div class="course-card__img">
+            <span class="course-card__badge">Hot</span>
+            <img src="assets/img/courses-3.jpg" alt="UI/UX design students prototyping interfaces">
+            <div class="course-card__progress"><div class="course-card__progress-fill" style="width:82%"></div></div>
+          </div>
+          <div class="course-card__body">
+            <span class="course-card__category">Design</span>
+            <h3 class="course-card__title">UI/UX Design Masterclass</h3>
+            <div class="course-card__meta">
+              <span><i class="fas fa-user"></i> 1,560 Students</span>
+              <span><i class="fas fa-clock"></i> 8 Weeks</span>
+            </div>
+            <div class="course-card__footer">
+              <span class="course-card__price">$249 <small>$449</small></span>
+              <a href="#" class="btn btn--primary btn--sm">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enrollment CTA -->
+  <section class="enrollment-section section-py">
+    <div class="container">
+      <div class="enrollment-grid">
+        <div class="enrollment-content reveal">
+          <h2>Start Your Learning Journey Today</h2>
+          <p>Join thousands of students who are advancing their careers through our expert-led programs. Financial aid and flexible payment plans are available.</p>
+          <div class="enrollment-features">
+            <div class="enrollment-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>14-day money-back guarantee on all courses</span>
+            </div>
+            <div class="enrollment-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Flexible scheduling — learn at your own pace</span>
+            </div>
+            <div class="enrollment-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Lifetime access to course materials and updates</span>
+            </div>
+            <div class="enrollment-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Personal mentor assigned from day one</span>
+            </div>
+          </div>
+        </div>
+        <div class="enrollment-form-card reveal">
+          <h3>Quick Enrollment</h3>
+          <form data-form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="enroll-name">Full Name</label>
+                <input type="text" id="enroll-name" class="form-input" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="enroll-email">Email Address</label>
+                <input type="email" id="enroll-email" class="form-input" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="enroll-course">Select Course</label>
+              <select id="enroll-course" class="form-input" required>
+                <option value="" disabled selected>Choose a program</option>
+                <option>Full-Stack Web Development</option>
+                <option>Data Analytics & Machine Learning</option>
+                <option>UI/UX Design Masterclass</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="enroll-phone">Phone Number</label>
+              <input type="tel" id="enroll-phone" class="form-input" placeholder="+1 (555) 000-0000">
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Submit Enrollment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section-py">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Have Questions About Our Programs?</h2>
+        <p>Our admissions team is here to help you find the right course for your career goals.</p>
+        <a href="contact.html" class="btn btn--lg" style="background:var(--white);color:var(--blue);border-color:var(--white);">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a href="index.html" class="footer__brand">
+            <div class="footer__brand-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="footer__brand-name">Edu<span>Kate</span></div>
+          </a>
+          <p class="footer__desc">Empowering learners worldwide with expert-led courses, hands-on projects, and accredited certifications.</p>
+          <div class="footer__newsletter">
+            <input type="email" placeholder="Your email address" aria-label="Email for newsletter">
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a>
+            <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Programs</h4>
+          <div class="footer__links">
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Web Development</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Data Science</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> UI/UX Design</a>
+            <a href="courses.html"><i class="fas fa-chevron-right"></i> Digital Marketing</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact Us</h4>
+          <div class="footer__contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Learning Avenue, Education City, EC 45678</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (555) 234-5678</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>hello@edukate.com</span>
+          </div>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> EduKate. All rights reserved.</span>
+        <span>Designed with <i class="fas fa-heart" style="color:var(--red)"></i> for Education</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

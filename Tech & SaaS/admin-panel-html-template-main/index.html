@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudBase — Admin Panel &amp; SaaS Dashboard</title>
+  <meta name="description" content="CloudBase is a modern SaaS admin panel template — KPI metrics, project management, team grid, activity feed and account settings in a clean card-based layout.">
+  <meta name="keywords" content="admin panel, saas dashboard, admin template, project management, kpi dashboard, cloudbase">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ====== TOP NAVBAR ====== -->
+  <header class="header">
+    <div class="container">
+      <nav>
+        <a href="index.html" class="nav-logo"><span class="logo-icon">☁</span>CloudBase</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Dashboard</a>
+          <a href="dashboard.html" class="nav-link">Analytics</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="settings.html" class="nav-link">Settings</a>
+        </div>
+        <div class="nav-cta">
+          <div class="header-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search projects, clients…" aria-label="Search">
+          </div>
+          <div class="user-dropdown" id="userDropdown">
+            <button class="user-dropdown-trigger" type="button" aria-expanded="false" aria-haspopup="true">
+              <img class="avatar" src="assets/img/user.jpg" alt="Sarah Chen avatar">
+              <span class="user-name">Sarah Chen</span>
+              <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="user-dropdown-menu" role="menu">
+              <a href="settings.html">👤 My Profile</a>
+              <a href="settings.html">⚙️ Account Settings</a>
+              <a href="team.html">👥 Manage Team</a>
+              <div class="dropdown-divider"></div>
+              <a href="404.html">🚪 Sign Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== PAGE HERO ====== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">Good morning, Sarah ☀️</h1>
+      <p class="page-subtitle">Here's what's happening across your workspace today.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+
+      <!-- ====== KPI ROW ====== -->
+      <section class="kpi-grid" aria-label="Key metrics">
+        <article class="kpi-card reveal">
+          <div class="kpi-icon kpi-icon--primary">💰</div>
+          <div class="kpi-body">
+            <div class="kpi-value">$84,250</div>
+            <div class="kpi-label">Monthly Revenue</div>
+            <span class="kpi-trend kpi-trend--up">▲ 12.4%</span>
+          </div>
+        </article>
+        <article class="kpi-card reveal d1">
+          <div class="kpi-icon kpi-icon--success">📦</div>
+          <div class="kpi-body">
+            <div class="kpi-value">1,432</div>
+            <div class="kpi-label">Active Projects</div>
+            <span class="kpi-trend kpi-trend--up">▲ 8.1%</span>
+          </div>
+        </article>
+        <article class="kpi-card reveal d2">
+          <div class="kpi-icon kpi-icon--purple">👥</div>
+          <div class="kpi-body">
+            <div class="kpi-value">286</div>
+            <div class="kpi-label">Team Members</div>
+            <span class="kpi-trend kpi-trend--up">▲ 5.6%</span>
+          </div>
+        </article>
+        <article class="kpi-card reveal d3">
+          <div class="kpi-icon kpi-icon--dark">⚡</div>
+          <div class="kpi-body">
+            <div class="kpi-value">99.98%</div>
+            <div class="kpi-label">Uptime SLA</div>
+            <span class="kpi-trend kpi-trend--down">▼ 0.02%</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- ====== RECENT PROJECTS + ACTIVITY ====== -->
+      <section class="analytics-grid">
+        <div class="card reveal">
+          <div class="card-header">
+            <h3>📋 Recent Projects</h3>
+            <a href="projects.html" class="btn btn-outline btn-sm">View All →</a>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Client</th>
+                  <th>Status</th>
+                  <th>Progress</th>
+                  <th>Due Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="project-name">Nimbus Analytics</td>
+                  <td class="project-client">Orbit Labs</td>
+                  <td><span class="status-badge status-badge--active">Active</span></td>
+                  <td>
+                    <div class="progress-cell">
+                      <div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+                      <span class="progress-text">78%</span>
+                    </div>
+                  </td>
+                  <td>Sep 14</td>
+                </tr>
+                <tr>
+                  <td class="project-name">Stratus CRM</td>
+                  <td class="project-client">Vantage Inc.</td>
+                  <td><span class="status-badge status-badge--pending">In Review</span></td>
+                  <td>
+                    <div class="progress-cell">
+                      <div class="progress-bar"><div class="progress-fill progress-fill--purple" style="width:54%"></div></div>
+                      <span class="progress-text">54%</span>
+                    </div>
+                  </td>
+                  <td>Sep 21</td>
+                </tr>
+                <tr>
+                  <td class="project-name">Cumulus Mobile</td>
+                  <td class="project-client">PixelWorks</td>
+                  <td><span class="status-badge status-badge--active">Active</span></td>
+                  <td>
+                    <div class="progress-cell">
+                      <div class="progress-bar"><div class="progress-fill" style="width:92%"></div></div>
+                      <span class="progress-text">92%</span>
+                    </div>
+                  </td>
+                  <td>Sep 05</td>
+                </tr>
+                <tr>
+                  <td class="project-name">Cirrus ERP</td>
+                  <td class="project-client">Northwind Co.</td>
+                  <td><span class="status-badge status-badge--completed">Completed</span></td>
+                  <td>
+                    <div class="progress-cell">
+                      <div class="progress-bar"><div class="progress-fill progress-fill--success" style="width:100%"></div></div>
+                      <span class="progress-text">100%</span>
+                    </div>
+                  </td>
+                  <td>Aug 28</td>
+                </tr>
+                <tr>
+                  <td class="project-name">Altostratus BI</td>
+                  <td class="project-client">Skyline Group</td>
+                  <td><span class="status-badge status-badge--cancelled">On Hold</span></td>
+                  <td>
+                    <div class="progress-cell">
+                      <div class="progress-bar"><div class="progress-fill progress-fill--purple" style="width:30%"></div></div>
+                      <span class="progress-text">30%</span>
+                    </div>
+                  </td>
+                  <td>Oct 02</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card reveal d1">
+          <div class="card-header">
+            <h3>⚡ Activity Feed</h3>
+            <span class="form-hint">Live</span>
+          </div>
+          <div class="card-body">
+            <div class="activity-feed">
+              <div class="activity-item">
+                <span class="activity-dot activity-dot--success"></span>
+                <div class="activity-content">
+                  <p class="activity-text"><strong>Maya Patel</strong> deployed <strong>Nimbus Analytics</strong> to production</p>
+                  <p class="activity-time">12 min ago</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot activity-dot--primary"></span>
+                <div class="activity-content">
+                  <p class="activity-text"><strong>Liam Novak</strong> commented on <strong>Stratus CRM</strong></p>
+                  <p class="activity-time">1 hr ago</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot activity-dot--warning"></span>
+                <div class="activity-content">
+                  <p class="activity-text"><strong>API usage</strong> exceeded 80% of quota this month</p>
+                  <p class="activity-time">3 hrs ago</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot activity-dot--purple"></span>
+                <div class="activity-content">
+                  <p class="activity-text"><strong>Zoe Turner</strong> invited 3 members to <strong>CloudBase</strong></p>
+                  <p class="activity-time">5 hrs ago</p>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot activity-dot--success"></span>
+                <div class="activity-content">
+                  <p class="activity-text"><strong>Cirrus ERP</strong> was marked as completed</p>
+                  <p class="activity-time">Yesterday</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== QUICK ACCESS ====== -->
+      <section class="section">
+        <div class="section-header reveal">
+          <div>
+            <h2 class="section-title">Quick Access</h2>
+            <p class="section-sub">Jump straight into your most-used workspaces.</p>
+          </div>
+        </div>
+        <div class="kpi-grid">
+          <article class="kpi-card reveal">
+            <div class="kpi-icon kpi-icon--primary">📊</div>
+            <div class="kpi-body">
+              <div class="kpi-value">Analytics</div>
+              <div class="kpi-label">Detailed usage &amp; performance metrics</div>
+              <a href="dashboard.html" class="btn btn-outline btn-sm" style="margin-top:12px">Open →</a>
+            </div>
+          </article>
+          <article class="kpi-card reveal d1">
+            <div class="kpi-icon kpi-icon--purple">🗂️</div>
+            <div class="kpi-body">
+              <div class="kpi-value">Projects</div>
+              <div class="kpi-label">Manage deliverables and milestones</div>
+              <a href="projects.html" class="btn btn-outline btn-sm" style="margin-top:12px">Open →</a>
+            </div>
+          </article>
+          <article class="kpi-card reveal d2">
+            <div class="kpi-icon kpi-icon--success">👥</div>
+            <div class="kpi-body">
+              <div class="kpi-value">Team</div>
+              <div class="kpi-label">Your people, roles and availability</div>
+              <a href="team.html" class="btn btn-outline btn-sm" style="margin-top:12px">Open →</a>
+            </div>
+          </article>
+          <article class="kpi-card reveal d3">
+            <div class="kpi-icon kpi-icon--dark">⚙️</div>
+            <div class="kpi-body">
+              <div class="kpi-value">Settings</div>
+              <div class="kpi-label">Profile, workspace &amp; notifications</div>
+              <a href="settings.html" class="btn btn-outline btn-sm" style="margin-top:12px">Open →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand">☁ CloudBase</span>
+          <p>A modern SaaS admin panel — clean card-based layout, KPI metrics, project management, team and settings in one template.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="dashboard.html">Analytics</a><br>
+          <a href="projects.html">Projects</a><br>
+          <a href="team.html">Team</a><br>
+          <a href="settings.html">Settings</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="404.html">Documentation</a><br>
+          <a href="404.html">API Reference</a><br>
+          <a href="404.html">Changelog</a><br>
+          <a href="404.html">Status</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="team.html">About Us</a><br>
+          <a href="settings.html">Contact</a><br>
+          <a href="404.html">Privacy</a><br>
+          <a href="404.html">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> CloudBase. All rights reserved.</span>
+        <span>Framework-free · Responsive · Production-ready</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

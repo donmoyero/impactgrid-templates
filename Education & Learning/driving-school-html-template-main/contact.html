@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — DRIVIN Driving School</title>
+  <meta name="description" content="Get in touch with DRIVIN. Book your driving lesson, ask questions, or visit us at our New York location.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <a href="tel:+1234567890"><i class="fa fa-phone"></i> +1 234 567 890</a>
+        <a href="mailto:info@drivin.com"><i class="fa fa-envelope"></i> info@drivin.com</a>
+      </div>
+      <div class="topbar-right">
+        <span><i class="fa fa-clock"></i> Mon - Sat: 8:00 AM - 7:00 PM</span>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand"><i class="fa fa-car-side"></i> DRIV<span>IN</span></a>
+      <button class="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#booking" class="btn btn-primary btn-sm">Book Lesson</a>
+      </div>
+    </div>
+    <div class="nav-overlay"></div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have questions? Ready to start? Reach out and we'll help you take the first step toward getting your license.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Info -->
+        <div class="reveal">
+          <div class="section-label" style="justify-content:flex-start;">Get in Touch</div>
+          <h2 class="section-title" style="text-align:left;">We're Here to Help</h2>
+          <p style="color:var(--gray-600);margin-bottom:2rem;">Whether you're ready to book your first lesson or just have questions about our programs, we'd love to hear from you.</p>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa fa-location-dot"></i></div>
+            <div>
+              <h5>Visit Us</h5>
+              <p>123 Roadway Ave, Suite 100<br>New York, NY 10001</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa fa-phone"></i></div>
+            <div>
+              <h5>Call Us</h5>
+              <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa fa-envelope"></i></div>
+            <div>
+              <h5>Email Us</h5>
+              <p><a href="mailto:info@drivin.com">info@drivin.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa fa-clock"></i></div>
+            <div>
+              <h5>Office Hours</h5>
+              <p>Monday - Saturday: 8:00 AM - 7:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+
+          <div class="map-placeholder" style="margin-top:1.5rem;">
+            <span><i class="fa fa-map"></i> Map placeholder</span>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="booking-form-card reveal reveal-delay-1" id="contact-form">
+          <h3>Send Us a Message</h3>
+          <form data-form>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="cf-name">Full Name *</label>
+                <input type="text" id="cf-name" name="name" required placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email *</label>
+                <input type="email" id="cf-email" name="email" required placeholder="you@example.com">
+              </div>
+              <div class="form-group">
+                <label for="cf-phone">Phone</label>
+                <input type="tel" id="cf-phone" name="phone" placeholder="+1 234 567 890">
+              </div>
+              <div class="form-group">
+                <label for="cf-course">Interested In</label>
+                <select id="cf-course" name="course">
+                  <option value="">Select a course</option>
+                  <option value="automatic">Automatic Car Lessons</option>
+                  <option value="highway">Highway &amp; City Driving</option>
+                  <option value="full">Full License Package</option>
+                  <option value="other">Other / General Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="cf-message">Message *</label>
+                <textarea id="cf-message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
+              </div>
+              <div class="form-group full">
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Send Message <i class="fa fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Road Divider -->
+  <div class="road-divider"><span class="road-icon"><i class="fa fa-calendar-check"></i></span></div>
+
+  <!-- Booking Section -->
+  <section class="booking-section py-section" id="booking">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info reveal">
+          <div class="section-label" style="justify-content:flex-start;color:var(--yellow);">
+            <span style="background:var(--yellow);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">Book a Lesson</span>
+          </div>
+          <h2>Schedule Your Driving Lesson Today</h2>
+          <p>Fill out the form and we'll match you with the right instructor and time slot. Get on the road to your license faster.</p>
+          <div class="booking-features">
+            <div class="booking-feature">
+              <i class="fa fa-check-circle"></i>
+              <span>Same-week availability most of the time</span>
+            </div>
+            <div class="booking-feature">
+              <i class="fa fa-check-circle"></i>
+              <span>Free cancellation up to 24 hours before</span>
+            </div>
+            <div class="booking-feature">
+              <i class="fa fa-check-circle"></i>
+              <span>Pick-up from your location available</span>
+            </div>
+            <div class="booking-feature">
+              <i class="fa fa-check-circle"></i>
+              <span>No hidden fees -- transparent pricing</span>
+            </div>
+          </div>
+        </div>
+        <div class="booking-form-card reveal reveal-delay-1">
+          <h3>Book Your Appointment</h3>
+          <form data-form>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="b-name">Your Name *</label>
+                <input type="text" id="b-name" name="name" required placeholder="Full name">
+              </div>
+              <div class="form-group">
+                <label for="b-email">Email *</label>
+                <input type="email" id="b-email" name="email" required placeholder="you@example.com">
+              </div>
+              <div class="form-group">
+                <label for="b-phone">Phone *</label>
+                <input type="tel" id="b-phone" name="phone" required placeholder="+1 234 567 890">
+              </div>
+              <div class="form-group">
+                <label for="b-course">Course Type *</label>
+                <select id="b-course" name="course" required>
+                  <option value="">Select course</option>
+                  <option value="automatic">Automatic Car Lessons ($299)</option>
+                  <option value="highway">Highway &amp; City ($399)</option>
+                  <option value="full">Full License Package ($549)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="b-date">Preferred Date</label>
+                <input type="date" id="b-date" name="date">
+              </div>
+              <div class="form-group">
+                <label for="b-time">Preferred Time</label>
+                <select id="b-time" name="time">
+                  <option value="">Select time</option>
+                  <option value="morning">Morning (8 AM - 11 AM)</option>
+                  <option value="midday">Midday (11 AM - 2 PM)</option>
+                  <option value="afternoon">Afternoon (2 PM - 5 PM)</option>
+                  <option value="evening">Evening (5 PM - 7 PM)</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="b-notes">Additional Notes</label>
+                <textarea id="b-notes" name="notes" rows="3" placeholder="Any special requests or questions..."></textarea>
+              </div>
+              <div class="form-group full">
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Book Appointment <i class="fa fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><i class="fa fa-car-side"></i> DRIV<span>IN</span></div>
+          <p>Professional driving lessons that build real-world confidence. Safety-first, patient instruction for learners at every level.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Courses</h4>
+          <div class="footer-links">
+            <a href="courses.html">Automatic Lessons</a>
+            <a href="courses.html">Highway Driving</a>
+            <a href="courses.html">Full License</a>
+            <a href="courses.html">Defensive Driving</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item">
+            <i class="fa fa-map-marker-alt"></i>
+            <p>123 Roadway Ave, Suite 100<br>New York, NY 10001</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-phone"></i>
+            <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:info@drivin.com">info@drivin.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        &copy; <span data-year></span> DRIVIN Driving School. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up"></i></button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

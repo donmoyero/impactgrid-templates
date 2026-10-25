@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found — CloudBase Admin Panel</title>
+  <meta name="description" content="Page not found. The page you are looking for doesn't exist or has been moved — head back to the CloudBase dashboard.">
+  <meta name="keywords" content="404, not found, error page, admin panel, cloudbase">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ====== TOP NAVBAR ====== -->
+  <header class="header">
+    <div class="container">
+      <nav>
+        <a href="index.html" class="nav-logo"><span class="logo-icon">☁</span>CloudBase</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Dashboard</a>
+          <a href="dashboard.html" class="nav-link">Analytics</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="settings.html" class="nav-link">Settings</a>
+        </div>
+        <div class="nav-cta">
+          <div class="header-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search projects, clients…" aria-label="Search">
+          </div>
+          <div class="user-dropdown" id="userDropdown">
+            <button class="user-dropdown-trigger" type="button" aria-expanded="false" aria-haspopup="true">
+              <img class="avatar" src="assets/img/user.jpg" alt="Sarah Chen avatar">
+              <span class="user-name">Sarah Chen</span>
+              <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="user-dropdown-menu" role="menu">
+              <a href="settings.html">👤 My Profile</a>
+              <a href="settings.html">⚙️ Account Settings</a>
+              <a href="team.html">👥 Manage Team</a>
+              <div class="dropdown-divider"></div>
+              <a href="404.html">🚪 Sign Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== 404 ====== -->
+  <section class="page-404">
+    <div class="error-code reveal">404</div>
+    <h2 class="reveal d1">This cloud is drifting somewhere else</h2>
+    <p class="reveal d2">The page you're looking for doesn't exist, was moved, or never landed here. Let's get you back to safe ground.</p>
+    <div class="reveal d3">
+      <a href="index.html" class="btn btn-primary">← Back to Dashboard</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding:0;margin:0">
+        <span>© <span data-year>2026</span> CloudBase. All rights reserved.</span>
+        <span>Framework-free · Responsive · Production-ready</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

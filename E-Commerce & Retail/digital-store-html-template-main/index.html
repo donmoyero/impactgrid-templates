@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTORE — Digital Store</title>
+  <meta name="description" content="ESTORE digital store — discover premium tech products, exclusive deals, and unmatched customer service.">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="mailto:hello@estore.com"><i class="fa fa-envelope"></i> hello@estore.com</a>
+        <a href="tel:+18001234567"><i class="fa fa-phone"></i> 1-800-123-4567</a>
+      </div>
+      <div class="top-bar-right">
+        <a href="#">Free shipping on orders over $50</a>
+        <a href="#">Track Order</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header-nav">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">E</div>
+        <div class="logo-text">ESTORE</div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" aria-label="Shopping cart">
+          <i class="fa fa-shopping-bag"></i>
+          Cart
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
+        <div class="burger" id="burger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">New Collection 2026</div>
+          <h1>Discover the <span>Future</span> of Digital Shopping</h1>
+          <p>Explore premium electronics, exclusive bundles, and everyday essentials — all at unbeatable prices with lightning-fast delivery.</p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn btn-primary btn-lg"><i class="fa fa-shopping-bag"></i> Shop Now</a>
+            <a href="about.html" class="btn btn-outline btn-lg">Learn More</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h3>10K+</h3>
+              <p>Happy Customers</p>
+            </div>
+            <div class="hero-stat">
+              <h3>500+</h3>
+              <p>Premium Products</p>
+            </div>
+            <div class="hero-stat">
+              <h3>99%</h3>
+              <p>Satisfaction Rate</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slider">
+          <div class="hero-slide active">
+            <img src="assets/img/slider-1.jpg" alt="Featured collection showcasing the latest tech products">
+            <div class="hero-slide-overlay">
+              <h3>Latest Tech Gadgets</h3>
+              <p>Explore our curated selection of top-rated electronics</p>
+            </div>
+          </div>
+          <div class="hero-slide">
+            <img src="assets/img/slider-2.jpg" alt="Exclusive deals on premium digital devices">
+            <div class="hero-slide-overlay">
+              <h3>Exclusive Deals</h3>
+              <p>Save up to 40% on select premium items</p>
+            </div>
+          </div>
+          <div class="hero-slide">
+            <img src="assets/img/slider-3.jpg" alt="Premium lifestyle products at ESTORE">
+            <div class="hero-slide-overlay">
+              <h3>Premium Lifestyle</h3>
+              <p>Quality products for the modern consumer</p>
+            </div>
+          </div>
+          <div class="hero-dots">
+            <button class="active" aria-label="Go to slide 1"></button>
+            <button aria-label="Go to slide 2"></button>
+            <button aria-label="Go to slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="brands">
+    <div class="container">
+      <div class="brands-grid">
+        <img src="assets/img/brand-1.png" alt="Partner brand logo">
+        <img src="assets/img/brand-2.png" alt="Partner brand logo">
+        <img src="assets/img/brand-3.png" alt="Partner brand logo">
+        <img src="assets/img/brand-4.png" alt="Partner brand logo">
+        <img src="assets/img/brand-5.png" alt="Partner brand logo">
+        <img src="assets/img/brand-6.png" alt="Partner brand logo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Strip -->
+  <section class="features-strip">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon"><i class="fa fa-truck-fast"></i></div>
+          <div>
+            <h4>Free Shipping</h4>
+            <p>Fast & free delivery on all orders over $50</p>
+          </div>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon"><i class="fa fa-shield-halved"></i></div>
+          <div>
+            <h4>Secure Payment</h4>
+            <p>100% secure checkout with encrypted data</p>
+          </div>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon"><i class="fa fa-rotate-left"></i></div>
+          <div>
+            <h4>Easy Returns</h4>
+            <p>30-day hassle-free return policy on all items</p>
+          </div>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+          <div class="feature-icon"><i class="fa fa-headset"></i></div>
+          <div>
+            <h4>24/7 Support</h4>
+            <p>Expert help whenever you need it, day or night</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shop by Category</h2>
+        <p>Browse our curated collections to find exactly what you need</p>
+      </div>
+      <div class="categories-grid">
+        <a href="products.html" class="category-card reveal reveal-delay-1">
+          <img src="assets/img/category-1.jpg" alt="Smartphones category">
+          <div class="category-card-overlay">
+            <h4>Smartphones</h4>
+            <span>128 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-2">
+          <img src="assets/img/category-2.jpg" alt="Laptops category">
+          <div class="category-card-overlay">
+            <h4>Laptops</h4>
+            <span>86 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-3">
+          <img src="assets/img/category-3.jpg" alt="Audio category">
+          <div class="category-card-overlay">
+            <h4>Audio</h4>
+            <span>64 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-4">
+          <img src="assets/img/category-4.jpg" alt="Wearables category">
+          <div class="category-card-overlay">
+            <h4>Wearables</h4>
+            <span>52 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-1">
+          <img src="assets/img/category-5.jpg" alt="Gaming category">
+          <div class="category-card-overlay">
+            <h4>Gaming</h4>
+            <span>95 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-2">
+          <img src="assets/img/category-6.jpg" alt="Home & Living category">
+          <div class="category-card-overlay">
+            <h4>Home &amp; Living</h4>
+            <span>73 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-3">
+          <img src="assets/img/category-7.jpg" alt="Accessories category">
+          <div class="category-card-overlay">
+            <h4>Accessories</h4>
+            <span>110 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-4">
+          <img src="assets/img/category-8.jpg" alt="Cameras category">
+          <div class="category-card-overlay">
+            <h4>Cameras</h4>
+            <span>38 Products</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Products</h2>
+        <p>Handpicked favorites from our latest arrivals</p>
+      </div>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-badge"><span class="badge badge-new">New</span></div>
+          <div class="product-img">
+            <img src="assets/img/product-1.jpg" alt="Wireless Noise-Canceling Headphones">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Audio</div>
+            <h3 class="product-name">Wireless Noise-Canceling Headphones</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i></div>
+              <span class="rating-count">(214)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$299.99</span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-badge"><span class="badge badge-sale">-25%</span></div>
+          <div class="product-img">
+            <img src="assets/img/product-2.jpg" alt="Ultra-Slim Laptop Pro 15">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Laptops</div>
+            <h3 class="product-name">Ultra-Slim Laptop Pro 15</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+              <span class="rating-count">(189)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$1,199.99 <span class="old-price">$1,599.99</span></span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card reveal reveal-delay-3">
+          <div class="product-img">
+            <img src="assets/img/product-3.jpg" alt="Smart Fitness Tracker X">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Wearables</div>
+            <h3 class="product-name">Smart Fitness Tracker X</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+              <span class="rating-count">(342)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$149.99</span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card reveal reveal-delay-4">
+          <div class="product-badge"><span class="badge badge-new">New</span></div>
+          <div class="product-img">
+            <img src="assets/img/product-4.jpg" alt="Portable Bluetooth Speaker">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Audio</div>
+            <h3 class="product-name">Portable Bluetooth Speaker</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa-regular fa-star"></i></div>
+              <span class="rating-count">(156)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$79.99</span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-badge"><span class="badge badge-sale">-15%</span></div>
+          <div class="product-img">
+            <img src="assets/img/product-5.jpg" alt="4K Ultra HD Action Camera">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Cameras</div>
+            <h3 class="product-name">4K Ultra HD Action Camera</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+              <span class="rating-count">(278)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$339.99 <span class="old-price">$399.99</span></span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-img">
+            <img src="assets/img/product-6.jpg" alt="Ergonomic Wireless Mouse">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Accessories</div>
+            <h3 class="product-name">Ergonomic Wireless Mouse</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i></div>
+              <span class="rating-count">(124)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$49.99</span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="product-card reveal reveal-delay-3">
+          <div class="product-badge"><span class="badge badge-new">New</span></div>
+          <div class="product-img">
+            <img src="assets/img/product-7.jpg" alt="Gaming Console Pro">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Gaming</div>
+            <h3 class="product-name">Gaming Console Pro</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+              <span class="rating-count">(412)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$499.99</span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="product-card reveal reveal-delay-4">
+          <div class="product-badge"><span class="badge badge-sale">-30%</span></div>
+          <div class="product-img">
+            <img src="assets/img/product-8.jpg" alt="Smart Home Hub Mini">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Home</div>
+            <h3 class="product-name">Smart Home Hub Mini</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i></div>
+              <span class="rating-count">(98)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$69.99 <span class="old-price">$99.99</span></span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 9 -->
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-img">
+            <img src="assets/img/product-9.jpg" alt="USB-C Fast Charging Cable">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Accessories</div>
+            <h3 class="product-name">USB-C Fast Charging Cable</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa-regular fa-star"></i></div>
+              <span class="rating-count">(567)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$19.99</span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 10 -->
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-badge"><span class="badge badge-sale">-20%</span></div>
+          <div class="product-img">
+            <img src="assets/img/product-10.jpg" alt="Wireless Ergonomic Keyboard">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Add to wishlist"><i class="fa fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="fa fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Accessories</div>
+            <h3 class="product-name">Wireless Ergonomic Keyboard</h3>
+            <div class="product-rating">
+              <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+              <span class="rating-count">(193)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">$89.99 <span class="old-price">$112.49</span></span>
+              <button class="product-add-btn" data-add><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="products.html" class="btn btn-outline btn-lg">View All Products <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <h2>Summer Sale — Up to 40% Off</h2>
+          <p>Limited time offer on our most popular products. Don't miss out!</p>
+        </div>
+        <a href="products.html" class="btn btn-white btn-lg">Shop the Sale <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Customers Say</h2>
+        <p>Real reviews from real customers who love shopping with us</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal reveal-delay-1">
+          <div class="review-header">
+            <img src="assets/img/review-1.jpg" alt="Sarah Johnson" class="review-avatar">
+            <div class="review-meta">
+              <h4>Sarah Johnson</h4>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+          <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+          <p>"Absolutely blown away by the quality and speed of delivery. The headphones I ordered exceeded all my expectations. ESTORE has a customer for life!"</p>
+        </div>
+        <div class="review-card reveal reveal-delay-2">
+          <div class="review-header">
+            <img src="assets/img/review-2.jpg" alt="Mark Thompson" class="review-avatar">
+            <div class="review-meta">
+              <h4>Mark Thompson</h4>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+          <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+          <p>"Best online shopping experience I've had. The product selection is amazing, prices are competitive, and their support team is incredibly responsive."</p>
+        </div>
+        <div class="review-card reveal reveal-delay-3">
+          <div class="review-header">
+            <img src="assets/img/review-3.jpg" alt="Emily Rodriguez" class="review-avatar">
+            <div class="review-meta">
+              <h4>Emily Rodriguez</h4>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+          <div class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i></div>
+          <p>"I've been shopping here for months and the consistency in quality and service never disappoints. The easy return policy gives me total confidence to try new products."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div>
+          <h2>Stay in the Loop</h2>
+          <p>Subscribe to our newsletter for exclusive deals, new arrivals, and insider tips.</p>
+        </div>
+        <form class="newsletter-form" data-form>
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">E</div>
+            <div class="logo-text">ESTORE</div>
+          </a>
+          <p>Your one-stop digital store for premium electronics and everyday essentials. Quality products, unbeatable prices, exceptional service.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><i class="fa fa-location-dot"></i> 123 Commerce St, Tech City, CA 90210</p>
+          <p><i class="fa fa-phone"></i> 1-800-123-4567</p>
+          <p><i class="fa fa-envelope"></i> hello@estore.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> ESTORE. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

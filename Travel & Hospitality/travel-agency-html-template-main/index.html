@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TRIPCRAFT crafts unforgettable journeys — hand-built tour packages, expert local guides and 24/7 support across 40+ destinations. Plan your next adventure today.">
+  <meta name="keywords" content="travel agency, tour packages, vacation planner, custom trips, guided tours, TRIPCRAFT travel">
+  <title>TRIPCRAFT — Craft Your Next Adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo"><span class="logo-mark">✈️</span>Trip<span class="logo-accent">Craft</span></a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Tours</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="contact.html" class="nav-link nav-cta">Book Now</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg">
+        <img class="active" src="assets/img/carousel-1.jpg" alt="Santorini cliffside village glowing at golden hour">
+        <img src="assets/img/carousel-2.jpg" alt="Lush Bali rice terraces under morning light">
+        <img src="assets/img/carousel-3.jpg" alt="Overwater villas on a turquoise Maldivian lagoon">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <span class="hero-badge">✈ Explore the World</span>
+            <h1 class="hero-title">Your Next <span class="accent">Adventure</span> Starts Here</h1>
+            <p class="hero-sub">Hand-crafted itineraries, expert local guides and 40+ dream destinations — all wrapped in one seamless journey, planned around you.</p>
+            <div class="hero-actions">
+              <a href="services.html" class="btn btn--amber">Explore Tours</a>
+              <a href="about.html" class="btn btn--outline">Our Story</a>
+              <span class="hero-scroll">Scroll to discover</span>
+            </div>
+          </div>
+          <div class="hero-booking">
+            <h2 class="booking-title">Plan Your Trip</h2>
+            <p class="booking-sub">Tell us where you want to go — our experts will do the rest.</p>
+            <form class="booking-form" data-form novalidate>
+              <div class="form-group">
+                <label class="form-label" for="bk-from">From</label>
+                <input class="form-input" type="text" id="bk-from" name="from" placeholder="City or airport" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bk-to">Destination</label>
+                <select class="form-select" id="bk-to" name="to" required>
+                  <option value="">Select destination</option>
+                  <option>Bali, Indonesia</option>
+                  <option>Santorini, Greece</option>
+                  <option>Paris, France</option>
+                  <option>Tokyo, Japan</option>
+                  <option>Marrakech, Morocco</option>
+                  <option>Maldives</option>
+                  <option>Swiss Alps</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bk-depart">Departure Date</label>
+                <input class="form-input" type="date" id="bk-depart" name="depart" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bk-travelers">Travelers</label>
+                <select class="form-select" id="bk-travelers" name="travelers" required>
+                  <option value="">Select</option>
+                  <option>1 traveler</option>
+                  <option>2 travelers</option>
+                  <option>3 travelers</option>
+                  <option>4+ travelers</option>
+                </select>
+              </div>
+              <div class="booking-full form-ok">Thanks! A travel expert will reach out within 24 hours.</div>
+              <div class="booking-full form-err">Please fill in all required fields.</div>
+              <button class="btn btn--primary" type="submit">Search Trips</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Featured Journeys</span>
+          <h2 class="section-title">Popular Tours This Season</h2>
+          <p class="section-sub">Our most-loved itineraries — tried, tested and refined by thousands of travelers. Prices per person, all inclusive of stays, guides and highlights.</p>
+        </div>
+        <div class="tours-grid">
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/blog-1.jpg" alt="Bali temple gate framed by tropical greenery" loading="lazy">
+              <span class="tour-flag">Best Seller</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-meta">
+                <span>⏱ 8 days</span>
+                <span>📍 Bali, Indonesia</span>
+                <span class="tour-rating">★ 4.9</span>
+              </div>
+              <h3 class="tour-title">Bali Island Escape</h3>
+              <p class="tour-desc">Temples, rice terraces and hidden waterfalls — eight days exploring the island of the gods with a local guide.</p>
+              <div class="tour-foot">
+                <div class="tour-price">$1,290<small>per person</small></div>
+                <a href="services.html" class="btn btn--primary btn--sm">View Tour</a>
+              </div>
+            </div>
+          </article>
+          <article class="tour-card reveal reveal-delay-1">
+            <div class="tour-media">
+              <img src="assets/img/blog-2.jpg" alt="Whitewashed Santorini buildings over the Aegean Sea" loading="lazy">
+              <span class="tour-flag">Romantic</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-meta">
+                <span>⏱ 6 days</span>
+                <span>📍 Santorini, Greece</span>
+                <span class="tour-rating">★ 4.8</span>
+              </div>
+              <h3 class="tour-title">Santorini Sunset Escape</h3>
+              <p class="tour-desc">Caldera views, cave suites and the famous Oia sunset — a slow-paced island romance with private transfers.</p>
+              <div class="tour-foot">
+                <div class="tour-price">$1,450<small>per person</small></div>
+                <a href="services.html" class="btn btn--primary btn--sm">View Tour</a>
+              </div>
+            </div>
+          </article>
+          <article class="tour-card reveal reveal-delay-2">
+            <div class="tour-media">
+              <img src="assets/img/blog-3.jpg" alt="Parisian streets with the Eiffel Tower in the distance" loading="lazy">
+              <span class="tour-flag">Cultural</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-meta">
+                <span>⏱ 5 days</span>
+                <span>📍 Paris, France</span>
+                <span class="tour-rating">★ 4.7</span>
+              </div>
+              <h3 class="tour-title">Paris Lights &amp; Landmarks</h3>
+              <p class="tour-desc">Skip-the-line museums, Seine cruises and café terraces — the City of Light, curated down to the last croissant.</p>
+              <div class="tour-foot">
+                <div class="tour-price">$1,180<small>per person</small></div>
+                <a href="services.html" class="btn btn--primary btn--sm">View Tour</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sky">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Why TripCraft</span>
+          <h2 class="section-title">Travel, Done Right</h2>
+          <p class="section-sub">We obsess over the details so you can focus on the memories. Here's what makes a TripCraft journey different.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">🧭</div>
+            <h3 class="feature-title">Expert Local Guides</h3>
+            <p class="feature-text">Every tour is led by vetted locals who know the hidden corners guidebooks miss.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">🛟</div>
+            <h3 class="feature-title">24/7 On-Trip Support</h3>
+            <p class="feature-text">A real human, one tap away, anywhere in the world — before, during and after your trip.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">💰</div>
+            <h3 class="feature-title">Best Price Promise</h3>
+            <p class="feature-text">Found a better price elsewhere? We'll match it and add a little extra on top.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon">👥</div>
+            <h3 class="feature-title">Small Groups Only</h3>
+            <p class="feature-text">We cap every departure at 14 travelers — intimate, flexible and never rushed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="about-split">
+          <div class="about-media reveal">
+            <div class="about-media-badge">14+<small>Years crafting trips</small></div>
+            <img class="about-media-main" src="assets/img/about-img.jpg" alt="Traveler standing before a scenic mountain view" loading="lazy">
+            <div class="about-media-float">
+              <img src="assets/img/about-img-1.png" alt="Guide leading a small group through a coastal town" loading="lazy">
+            </div>
+          </div>
+          <div class="about-copy reveal">
+            <span class="section-eyebrow">Who We Are</span>
+            <h2 class="section-title">Crafted by Travelers, For Travelers</h2>
+            <p class="section-sub">TripCraft began in 2011 with two backpacks and a simple belief: travel should feel personal. Today our team of 60+ travel designers has sent 120,000 travelers across five continents — and we still hand-build every single itinerary.</p>
+            <div class="about-points">
+              <div class="about-point">
+                <span class="about-point-icon">🗺</span>
+                <div><strong>Custom itineraries</strong><p>Every trip shaped around your pace, budget and dreams.</p></div>
+              </div>
+              <div class="about-point">
+                <span class="about-point-icon">🤝</span>
+                <div><strong>Local partnerships</strong><p>Family-run stays and guides who call each place home.</p></div>
+              </div>
+              <div class="about-point">
+                <span class="about-point-icon">🌱</span>
+                <div><strong>Sustainable travel</strong><p>Carbon-offset flights and community-first experiences.</p></div>
+              </div>
+              <div class="about-point">
+                <span class="about-point-icon">🛡</span>
+                <div><strong>Flexible booking</strong><p>Free date changes up to 30 days before departure.</p></div>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn--primary">More About Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sky">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Where To Next?</span>
+          <h2 class="section-title">Destinations We Love</h2>
+          <p class="section-sub">Swipe through a few of our favorite corners of the planet — each one ready to be turned into your story.</p>
+        </div>
+        <div class="destinations-strip">
+          <div class="destination-card reveal">
+            <div class="destination-flag">🇫🇷</div>
+            <div class="destination-name">Paris</div>
+            <div class="destination-count">12 tours</div>
+          </div>
+          <div class="destination-card reveal reveal-delay-1">
+            <div class="destination-flag">🇮🇩</div>
+            <div class="destination-name">Bali</div>
+            <div class="destination-count">9 tours</div>
+          </div>
+          <div class="destination-card reveal reveal-delay-2">
+            <div class="destination-flag">🇬🇷</div>
+            <div class="destination-name">Santorini</div>
+            <div class="destination-count">7 tours</div>
+          </div>
+          <div class="destination-card reveal reveal-delay-1">
+            <div class="destination-flag">🇯🇵</div>
+            <div class="destination-name">Tokyo</div>
+            <div class="destination-count">11 tours</div>
+          </div>
+          <div class="destination-card reveal">
+            <div class="destination-flag">🇲🇦</div>
+            <div class="destination-name">Marrakech</div>
+            <div class="destination-count">6 tours</div>
+          </div>
+          <div class="destination-card reveal reveal-delay-2">
+            <div class="destination-flag">🇲🇻</div>
+            <div class="destination-name">Maldives</div>
+            <div class="destination-count">5 tours</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="testimonial reveal">
+          <p class="testimonial-quote">TripCraft turned our honeymoon into the trip of a lifetime. Every transfer, every hidden café, every sunset was perfectly planned — yet it never felt scripted.</p>
+          <div class="testimonial-avatar">EM</div>
+          <div class="testimonial-name">Elena &amp; Marco</div>
+          <div class="testimonial-role">Santorini Sunset Escape, June 2025</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-bg">
+        <img src="assets/img/subscribe-img.jpg" alt="Palm-lined tropical beach with crystal-clear water" loading="lazy">
+      </div>
+      <div class="newsletter-overlay"></div>
+      <div class="container">
+        <div class="newsletter-content reveal">
+          <span class="section-eyebrow">Deals &amp; Inspiration</span>
+          <h2 class="section-title">Never Miss a Fare</h2>
+          <p class="section-sub">Join 40,000+ travelers receiving monthly destination guides, insider tips and members-only discounts — straight to your inbox.</p>
+          <form class="newsletter-form" data-form novalidate>
+            <div class="newsletter-row">
+              <input class="form-input" type="email" id="nl-email" name="email" placeholder="Your email address" aria-label="Email address" required>
+              <button class="btn btn--amber" type="submit">Subscribe</button>
+            </div>
+            <div class="form-ok">You're in! Check your inbox for this month's deals.</div>
+            <div class="form-err">Please enter a valid email address to subscribe.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span class="logo-mark">✈️</span>Trip<span class="logo-accent">Craft</span></div>
+          <p class="footer-brand-desc">A travel agency crafting journeys, not just bookings. Hand-built itineraries, expert guides and 40+ destinations across five continents.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Explore</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="services.html" class="footer-link">Tour Packages</a>
+            <a href="blog.html" class="footer-link">Travel Blog</a>
+            <a href="index.html" class="footer-link">Home</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Plan</h4>
+          <div class="footer-links">
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="contact.html" class="footer-link">Book Now</a>
+            <a href="services.html" class="footer-link">Add-ons</a>
+            <a href="services.html" class="footer-link">Popular Tours</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Reach Us</h4>
+          <div class="footer-contact">
+            <span>📍 42 Wanderlust Avenue, Portland, OR</span>
+            <span>📞 +1 (555) 012-3456</span>
+            <span>✉️ hello@tripcraft.travel</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> TRIPCRAFT. All rights reserved.</span>
+        <span>Travel is the only thing you buy that makes you richer <span class="footer-heart">✦</span></span>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

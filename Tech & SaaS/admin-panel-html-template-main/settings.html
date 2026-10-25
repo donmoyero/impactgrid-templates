@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings — CloudBase Admin Panel</title>
+  <meta name="description" content="CloudBase settings — manage your profile, workspace, notification preferences and security in one clean form-based panel.">
+  <meta name="keywords" content="settings, profile form, notifications, security, admin panel, cloudbase">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ====== TOP NAVBAR ====== -->
+  <header class="header">
+    <div class="container">
+      <nav>
+        <a href="index.html" class="nav-logo"><span class="logo-icon">☁</span>CloudBase</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Dashboard</a>
+          <a href="dashboard.html" class="nav-link">Analytics</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="settings.html" class="nav-link active">Settings</a>
+        </div>
+        <div class="nav-cta">
+          <div class="header-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search projects, clients…" aria-label="Search">
+          </div>
+          <div class="user-dropdown" id="userDropdown">
+            <button class="user-dropdown-trigger" type="button" aria-expanded="false" aria-haspopup="true">
+              <img class="avatar" src="assets/img/user.jpg" alt="Sarah Chen avatar">
+              <span class="user-name">Sarah Chen</span>
+              <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="user-dropdown-menu" role="menu">
+              <a href="settings.html">👤 My Profile</a>
+              <a href="settings.html">⚙️ Account Settings</a>
+              <a href="team.html">👥 Manage Team</a>
+              <div class="dropdown-divider"></div>
+              <a href="404.html">🚪 Sign Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== PAGE HERO ====== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">Settings ⚙️</h1>
+      <p class="page-subtitle">Manage your profile, workspace preferences and notifications.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+
+      <!-- ====== PROFILE SECTION ====== -->
+      <section class="settings-section reveal">
+        <div class="settings-section-header">
+          <h3>👤 Profile</h3>
+          <p>Update your personal details and profile photo.</p>
+        </div>
+        <div class="settings-section-body">
+          <form class="form" data-form novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name <span class="required">*</span></label>
+                <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Sarah" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name <span class="required">*</span></label>
+                <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Chen" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Work Email <span class="required">*</span></label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="sarah@cloudbase.io" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="role">Role</label>
+                <select class="form-select" id="role" name="role">
+                  <option value="admin" selected>Administrator</option>
+                  <option value="manager">Project Manager</option>
+                  <option value="member">Team Member</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="bio">Bio</label>
+              <textarea class="form-textarea" id="bio" name="bio" placeholder="Tell your team a little about yourself…"></textarea>
+              <p class="form-hint">Max 300 characters.</p>
+            </div>
+            <div class="form-ok" role="status">✓ Your profile has been saved successfully.</div>
+            <div class="form-err" role="alert">Please fill in all required fields.</div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Save Changes</button>
+              <button type="reset" class="btn btn-outline">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ====== WORKSPACE SECTION ====== -->
+      <section class="settings-section reveal">
+        <div class="settings-section-header">
+          <h3>🏢 Workspace</h3>
+          <p>Workspace identity and regional defaults.</p>
+        </div>
+        <div class="settings-section-body">
+          <form class="form" data-form novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="wsName">Workspace Name <span class="required">*</span></label>
+                <input class="form-input" type="text" id="wsName" name="wsName" placeholder="CloudBase HQ" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="timezone">Default Timezone</label>
+                <select class="form-select" id="timezone" name="timezone">
+                  <option value="utc" selected>UTC (Coordinated Universal Time)</option>
+                  <option value="est">EST (Eastern Standard Time)</option>
+                  <option value="pst">PST (Pacific Standard Time)</option>
+                  <option value="gmt">GMT (Greenwich Mean Time)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="wsUrl">Workspace URL</label>
+              <input class="form-input" type="text" id="wsUrl" name="wsUrl" placeholder="cloudbase.app" disabled>
+              <p class="form-hint">Contact support to change your workspace URL.</p>
+            </div>
+            <div class="form-ok" role="status">✓ Workspace settings saved.</div>
+            <div class="form-err" role="alert">Please fill in all required fields.</div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Save Changes</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ====== NOTIFICATIONS SECTION ====== -->
+      <section class="settings-section reveal">
+        <div class="settings-section-header">
+          <h3>🔔 Notifications</h3>
+          <p>Choose what you'd like to be notified about.</p>
+        </div>
+        <div class="settings-section-body">
+          <form class="form" data-form novalidate>
+            <div class="form-group" style="display:flex;flex-direction:column;gap:16px;">
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="toggle-track"></span>
+                <span>
+                  <span class="toggle-label">Project Updates</span><br>
+                  <span class="toggle-desc">Milestones, deployments and status changes.</span>
+                </span>
+              </label>
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="toggle-track"></span>
+                <span>
+                  <span class="toggle-label">Team Activity</span><br>
+                  <span class="toggle-desc">Comments, mentions and new members.</span>
+                </span>
+              </label>
+              <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="toggle-track"></span>
+                <span>
+                  <span class="toggle-label">Billing Alerts</span><br>
+                  <span class="toggle-desc">Invoices, renewals and payment failures.</span>
+                </span>
+              </label>
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="toggle-track"></span>
+                <span>
+                  <span class="toggle-label">Weekly Digest</span><br>
+                  <span class="toggle-desc">A summary of activity every Monday.</span>
+                </span>
+              </label>
+            </div>
+            <div class="form-ok" role="status">✓ Notification preferences saved.</div>
+            <div class="form-err" role="alert">Something went wrong — please try again.</div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Save Preferences</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ====== SECURITY SECTION ====== -->
+      <section class="settings-section reveal">
+        <div class="settings-section-header">
+          <h3>🔒 Security</h3>
+          <p>Keep your account safe with two-factor authentication.</p>
+        </div>
+        <div class="settings-section-body">
+          <form class="form" data-form novalidate>
+            <div class="form-group" style="display:flex;flex-direction:column;gap:16px;">
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="toggle-track"></span>
+                <span>
+                  <span class="toggle-label">Two-Factor Authentication</span><br>
+                  <span class="toggle-desc">Require a verification code when you sign in.</span>
+                </span>
+              </label>
+              <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="toggle-track"></span>
+                <span>
+                  <span class="toggle-label">Login Alerts</span><br>
+                  <span class="toggle-desc">Email me when a new device signs in.</span>
+                </span>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newPass">New Password</label>
+              <input class="form-input" type="password" id="newPass" name="newPass" placeholder="••••••••">
+              <p class="form-hint">At least 8 characters with one number and one symbol.</p>
+            </div>
+            <div class="form-ok" role="status">✓ Security settings updated.</div>
+            <div class="form-err" role="alert">Please fill in all required fields.</div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Update Security</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand">☁ CloudBase</span>
+          <p>A modern SaaS admin panel — clean card-based layout, KPI metrics, project management, team and settings in one template.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="dashboard.html">Analytics</a><br>
+          <a href="projects.html">Projects</a><br>
+          <a href="team.html">Team</a><br>
+          <a href="settings.html">Settings</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="404.html">Documentation</a><br>
+          <a href="404.html">API Reference</a><br>
+          <a href="404.html">Changelog</a><br>
+          <a href="404.html">Status</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="team.html">About Us</a><br>
+          <a href="settings.html">Contact</a><br>
+          <a href="404.html">Privacy</a><br>
+          <a href="404.html">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> CloudBase. All rights reserved.</span>
+        <span>Framework-free · Responsive · Production-ready</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

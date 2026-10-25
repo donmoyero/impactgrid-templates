@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — CloudBase Admin Panel</title>
+  <meta name="description" content="CloudBase project management — track deliverables, milestones, progress and team assignments in a clean card-based grid.">
+  <meta name="keywords" content="project management, project cards, milestones, admin panel, cloudbase">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ====== TOP NAVBAR ====== -->
+  <header class="header">
+    <div class="container">
+      <nav>
+        <a href="index.html" class="nav-logo"><span class="logo-icon">☁</span>CloudBase</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Dashboard</a>
+          <a href="dashboard.html" class="nav-link">Analytics</a>
+          <a href="projects.html" class="nav-link active">Projects</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="settings.html" class="nav-link">Settings</a>
+        </div>
+        <div class="nav-cta">
+          <div class="header-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search projects, clients…" aria-label="Search">
+          </div>
+          <div class="user-dropdown" id="userDropdown">
+            <button class="user-dropdown-trigger" type="button" aria-expanded="false" aria-haspopup="true">
+              <img class="avatar" src="assets/img/user.jpg" alt="Sarah Chen avatar">
+              <span class="user-name">Sarah Chen</span>
+              <span class="dropdown-arrow">▼</span>
+            </button>
+            <div class="user-dropdown-menu" role="menu">
+              <a href="settings.html">👤 My Profile</a>
+              <a href="settings.html">⚙️ Account Settings</a>
+              <a href="team.html">👥 Manage Team</a>
+              <div class="dropdown-divider"></div>
+              <a href="404.html">🚪 Sign Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== PAGE HERO ====== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">Projects 🗂️</h1>
+      <p class="page-subtitle">Manage all active deliverables, milestones and client work.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+
+      <!-- ====== PROJECT GRID ====== -->
+      <section class="projects-grid" aria-label="Project cards">
+        <article class="project-card reveal">
+          <img class="project-card-image" src="assets/img/bootstrap-admin-template-free.jpg" alt="Nimbus Analytics project" loading="lazy">
+          <div class="project-card-body">
+            <h3 class="project-card-title">Nimbus Analytics</h3>
+            <p class="project-card-client">Client: Orbit Labs</p>
+            <div class="project-card-meta">
+              <span>📅 Sep 14</span>
+              <span>👤 5 members</span>
+            </div>
+            <div class="progress-cell">
+              <div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+              <span class="progress-text">78%</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-card-avatars">
+              <img src="assets/img/user.jpg" alt="Member avatar" loading="lazy">
+              <img src="assets/img/testimonial-1.jpg" alt="Member avatar" loading="lazy">
+              <span>+3</span>
+            </div>
+            <span class="status-badge status-badge--active">Active</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal d1">
+          <img class="project-card-image" src="assets/img/bootstrap-admin-template-free.jpg" alt="Stratus CRM project" loading="lazy">
+          <div class="project-card-body">
+            <h3 class="project-card-title">Stratus CRM</h3>
+            <p class="project-card-client">Client: Vantage Inc.</p>
+            <div class="project-card-meta">
+              <span>📅 Sep 21</span>
+              <span>👤 4 members</span>
+            </div>
+            <div class="progress-cell">
+              <div class="progress-bar"><div class="progress-fill progress-fill--purple" style="width:54%"></div></div>
+              <span class="progress-text">54%</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-card-avatars">
+              <img src="assets/img/testimonial-2.jpg" alt="Member avatar" loading="lazy">
+              <img src="assets/img/user.jpg" alt="Member avatar" loading="lazy">
+              <span>+2</span>
+            </div>
+            <span class="status-badge status-badge--pending">In Review</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal d2">
+          <img class="project-card-image" src="assets/img/bootstrap-admin-template-free.jpg" alt="Cumulus Mobile project" loading="lazy">
+          <div class="project-card-body">
+            <h3 class="project-card-title">Cumulus Mobile</h3>
+            <p class="project-card-client">Client: PixelWorks</p>
+            <div class="project-card-meta">
+              <span>📅 Sep 05</span>
+              <span>👤 6 members</span>
+            </div>
+            <div class="progress-cell">
+              <div class="progress-bar"><div class="progress-fill" style="width:92%"></div></div>
+              <span class="progress-text">92%</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-card-avatars">
+              <img src="assets/img/user.jpg" alt="Member avatar" loading="lazy">
+              <img src="assets/img/testimonial-1.jpg" alt="Member avatar" loading="lazy">
+              <span>+4</span>
+            </div>
+            <span class="status-badge status-badge--active">Active</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img class="project-card-image" src="assets/img/bootstrap-admin-template-free.jpg" alt="Cirrus ERP project" loading="lazy">
+          <div class="project-card-body">
+            <h3 class="project-card-title">Cirrus ERP</h3>
+            <p class="project-card-client">Client: Northwind Co.</p>
+            <div class="project-card-meta">
+              <span>📅 Aug 28</span>
+              <span>👤 8 members</span>
+            </div>
+            <div class="progress-cell">
+              <div class="progress-bar"><div class="progress-fill progress-fill--success" style="width:100%"></div></div>
+              <span class="progress-text">100%</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-card-avatars">
+              <img src="assets/img/testimonial-1.jpg" alt="Member avatar" loading="lazy">
+              <img src="assets/img/testimonial-2.jpg" alt="Member avatar" loading="lazy">
+              <span>+6</span>
+            </div>
+            <span class="status-badge status-badge--completed">Completed</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal d1">
+          <img class="project-card-image" src="assets/img/bootstrap-admin-template-free.jpg" alt="Altostratus BI project" loading="lazy">
+          <div class="project-card-body">
+            <h3 class="project-card-title">Altostratus BI</h3>
+            <p class="project-card-client">Client: Skyline Group</p>
+            <div class="project-card-meta">
+              <span>📅 Oct 02</span>
+              <span>👤 3 members</span>
+            </div>
+            <div class="progress-cell">
+              <div class="progress-bar"><div class="progress-fill progress-fill--purple" style="width:30%"></div></div>
+              <span class="progress-text">30%</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-card-avatars">
+              <img src="assets/img/user.jpg" alt="Member avatar" loading="lazy">
+              <span>+2</span>
+            </div>
+            <span class="status-badge status-badge--cancelled">On Hold</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal d2">
+          <img class="project-card-image" src="assets/img/bootstrap-admin-template-free.jpg" alt="Cumulonimbus Dashboard project" loading="lazy">
+          <div class="project-card-body">
+            <h3 class="project-card-title">Cumulonimbus Dashboard</h3>
+            <p class="project-card-client">Client: InterCloud</p>
+            <div class="project-card-meta">
+              <span>📅 Oct 12</span>
+              <span>👤 5 members</span>
+            </div>
+            <div class="progress-cell">
+              <div class="progress-bar"><div class="progress-fill" style="width:64%"></div></div>
+              <span class="progress-text">64%</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <div class="project-card-avatars">
+              <img src="assets/img/testimonial-2.jpg" alt="Member avatar" loading="lazy">
+              <img src="assets/img/user.jpg" alt="Member avatar" loading="lazy">
+              <span>+3</span>
+            </div>
+            <span class="status-badge status-badge--active">Active</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- ====== NEW PROJECT CTA ====== -->
+      <section class="section">
+        <div class="card reveal">
+          <div class="card-body" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+            <div>
+              <h3 style="margin-bottom:4px">Start a new project</h3>
+              <p>Create a workspace, invite your team and track delivery — all in one place.</p>
+            </div>
+            <a href="settings.html" class="btn btn-primary">+ New Project</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand">☁ CloudBase</span>
+          <p>A modern SaaS admin panel — clean card-based layout, KPI metrics, project management, team and settings in one template.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="dashboard.html">Analytics</a><br>
+          <a href="projects.html">Projects</a><br>
+          <a href="team.html">Team</a><br>
+          <a href="settings.html">Settings</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="404.html">Documentation</a><br>
+          <a href="404.html">API Reference</a><br>
+          <a href="404.html">Changelog</a><br>
+          <a href="404.html">Status</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="team.html">About Us</a><br>
+          <a href="settings.html">Contact</a><br>
+          <a href="404.html">Privacy</a><br>
+          <a href="404.html">Terms</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> CloudBase. All rights reserved.</span>
+        <span>Framework-free · Responsive · Production-ready</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

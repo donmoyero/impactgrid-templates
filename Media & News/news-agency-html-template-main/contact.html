@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — NEWSERS</title>
+  <meta name="description" content="Get in touch with NEWSERS. Contact our bureaus, request press credentials, or inquire about wire services and custom reporting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__brand">
+        <div class="header__logo">News<span>ers</span></div>
+        <div class="header__tagline">The World, Unfiltered</div>
+      </a>
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="services.html" class="header__nav-link">Services</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+      <div class="header__cta">
+        <a href="contact.html" class="btn btn--primary btn--sm">Get a Quote</a>
+      </div>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="services.html" class="mobile-nav__link">Services</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+    <div class="mobile-nav__cta"><a href="contact.html" class="btn btn--primary">Get a Quote</a></div>
+  </div>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="section-label reveal" style="justify-content:center">Get in Touch</div>
+      <h1 class="contact-hero__title reveal">Contact NEWSERS</h1>
+      <p class="contact-hero__sub reveal">Whether you need a wire feed, a custom investigation, or press credentials, we're here to help.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="form-card reveal-left">
+          <h3>Send Us a Message</h3>
+          <form data-form>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="jane@publication.com">
+            </div>
+            <div class="form-group">
+              <label for="org">Organization</label>
+              <input type="text" id="org" name="org" placeholder="Your publication or company">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a topic...</option>
+                <option value="wire">Wire Service Inquiry</option>
+                <option value="custom">Custom Reporting</option>
+                <option value="consulting">Media Consulting</option>
+                <option value="press">Press Credentials</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your project or inquiry..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+            <div class="form-ok">Message sent successfully. We'll get back to you within 24 hours.</div>
+            <div class="form-err">Please fill in all required fields correctly.</div>
+          </form>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="contact-info-cards reveal-right">
+          <div class="info-card">
+            <h3>Bureau Locations</h3>
+            <div class="info-card__item">
+              <div class="info-card__item-icon">NY</div>
+              <div class="info-card__item-text">
+                <h4>New York HQ</h4>
+                <p>350 Fifth Avenue, 72nd Floor<br>New York, NY 10118<br>+1 (212) 555-0142</p>
+              </div>
+            </div>
+            <div class="info-card__item">
+              <div class="info-card__item-icon">LD</div>
+              <div class="info-card__item-text">
+                <h4>London Bureau</h4>
+                <p>1 Canada Square, Canary Wharf<br>London E14 5AB<br>+44 20 7946 0958</p>
+              </div>
+            </div>
+            <div class="info-card__item">
+              <div class="info-card__item-icon">TK</div>
+              <div class="info-card__item-text">
+                <h4>Tokyo Bureau</h4>
+                <p>Marunouchi Park Building 24F<br>Chiyoda-ku, Tokyo 100-6390<br>+81 3 6256 1100</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>General Inquiries</h3>
+            <div class="info-card__item">
+              <div class="info-card__item-icon">@</div>
+              <div class="info-card__item-text">
+                <h4>Email</h4>
+                <p>info@newseragency.com<br>Available Monday - Friday, 9 AM - 6 PM EST</p>
+              </div>
+            </div>
+            <div class="info-card__item">
+              <div class="info-card__item-icon">&#x260E;</div>
+              <div class="info-card__item-text">
+                <h4>Phone</h4>
+                <p>+1 (212) 555-0100<br>International rates may apply</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Press Credentials -->
+          <div class="press-creds">
+            <h3>Press Credentials</h3>
+            <p style="font-size:var(--fs-sm);color:var(--c-text-muted);margin-bottom:var(--sp-lg)">NEWSERS press credentials are issued to verified journalists and editors. Apply below or contact our press office directly.</p>
+            <div class="press-creds__grid">
+              <div class="press-creds__item">
+                <h4>Accreditation</h4>
+                <p>Full access to NEWSERS events, press conferences, and media briefings worldwide.</p>
+              </div>
+              <div class="press-creds__item">
+                <h4>Wire Access</h4>
+                <p>Complimentary wire feed access for accredited journalists covering active beats.</p>
+              </div>
+              <div class="press-creds__item">
+                <h4>Source Network</h4>
+                <p>Access to our verified source network for story development and fact-checking.</p>
+              </div>
+              <div class="press-creds__item">
+                <h4>Legal Support</h4>
+                <p>Legal consultation for press freedom issues and source protection matters.</p>
+              </div>
+            </div>
+            <a href="mailto:press@newseragency.com" class="btn btn--outline btn--sm" style="margin-top:var(--sp-lg)">Apply for Credentials</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="header__logo">News<span>ers</span></div>
+          <p>Independent journalism since 2012. Delivering unfiltered reporting from bureaus across six continents.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="RSS">RSS</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Economy</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Health</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Ethics Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Press Releases</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2026</span> NEWSERS Agency. All rights reserved.</span>
+        <span>Designed for the independent press.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

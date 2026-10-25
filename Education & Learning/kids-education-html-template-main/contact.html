@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — KIDKINDER</title>
+  <meta name="description" content="Get in touch with KIDKINDER. Enroll your child, schedule a tour, or ask us anything about our programs.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-icon">🎨</span>
+        KID<span>KINDER</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="programs.html" class="header__nav-link">Programs</a></li>
+          <li><a href="contact.html" class="header__nav-link active">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary btn--sm header__cta">Enroll Now</a>
+      </nav>
+
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero__title reveal">Get In <span class="text-purple">Touch</span></h1>
+      <div class="page-hero__breadcrumb reveal reveal-delay-1">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="section contact">
+    <div class="container contact__inner">
+      <!-- Enrollment Form -->
+      <div class="form reveal" data-form>
+        <h2 class="form__title">Start the Enrollment Process</h2>
+        <p class="form__subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+
+        <form action="#" method="POST" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="parent-name">Parent / Guardian Name *</label>
+              <input type="text" id="parent-name" name="parent-name" class="form__input" placeholder="Your full name" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="child-name">Child's Name *</label>
+              <input type="text" id="child-name" name="child-name" class="form__input" placeholder="Child's full name" required>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="you@example.com" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" class="form__input" placeholder="(555) 123-4567" required>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="child-age">Child's Age *</label>
+              <select id="child-age" name="child-age" class="form__select" required>
+                <option value="" disabled selected>Select age range</option>
+                <option value="2-3">2-3 years</option>
+                <option value="3-4">3-4 years</option>
+                <option value="4-5">4-5 years</option>
+                <option value="5-7">5-7 years</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="program">Program of Interest *</label>
+              <select id="program" name="program" class="form__select" required>
+                <option value="" disabled selected>Select a program</option>
+                <option value="tiny-explorers">Tiny Explorers (Ages 2-3)</option>
+                <option value="creative-kids">Creative Kids (Ages 3-4)</option>
+                <option value="bright-minds">Bright Minds (Ages 4-5)</option>
+                <option value="super-stars">Super Stars After-School (Ages 5-7)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="start-date">Preferred Start Date</label>
+            <input type="date" id="start-date" name="start-date" class="form__input">
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="message">Additional Notes or Questions</label>
+            <textarea id="message" name="message" class="form__textarea" placeholder="Tell us about your child, any special needs, or questions you have..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg form__submit">Submit Enrollment Inquiry</button>
+
+          <div class="form-ok">Thank you! Your enrollment inquiry has been received. We'll contact you within 24 hours.</div>
+          <div class="form-err">Please fill in all required fields correctly and try again.</div>
+        </form>
+      </div>
+
+      <!-- Contact Info Sidebar -->
+      <div class="contact-info">
+        <div class="contact-info-card reveal reveal-delay-1">
+          <div class="contact-info-card__icon contact-info-card__icon--purple">📍</div>
+          <div>
+            <h4 class="contact-info-card__title">Our Location</h4>
+            <p class="contact-info-card__text">123 Learning Lane<br>Sunshine City, SC 12345</p>
+          </div>
+        </div>
+
+        <div class="contact-info-card reveal reveal-delay-2">
+          <div class="contact-info-card__icon contact-info-card__icon--yellow">📞</div>
+          <div>
+            <h4 class="contact-info-card__title">Phone</h4>
+            <p class="contact-info-card__text"><a href="tel:+15551234567">(555) 123-4567</a><br><a href="tel:+15559876543">(555) 987-6543</a></p>
+          </div>
+        </div>
+
+        <div class="contact-info-card reveal reveal-delay-3">
+          <div class="contact-info-card__icon contact-info-card__icon--pink">✉️</div>
+          <div>
+            <h4 class="contact-info-card__title">Email</h4>
+            <p class="contact-info-card__text"><a href="mailto:hello@kidkinder.com">hello@kidkinder.com</a><br><a href="mailto:enroll@kidkinder.com">enroll@kidkinder.com</a></p>
+          </div>
+        </div>
+
+        <!-- Hours Card -->
+        <div class="hours-card reveal reveal-delay-4">
+          <h4 class="hours-card__title">🕐 School Hours</h4>
+          <div class="hours-card__list">
+            <div class="hours-card__row">
+              <span class="hours-card__day">Monday - Friday</span>
+              <span class="hours-card__time">8:00 AM - 5:30 PM</span>
+            </div>
+            <div class="hours-card__row">
+              <span class="hours-card__day">Saturday</span>
+              <span class="hours-card__time">9:00 AM - 1:00 PM</span>
+            </div>
+            <div class="hours-card__row">
+              <span class="hours-card__day">Sunday</span>
+              <span class="hours-card__time">Closed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour CTA -->
+        <div class="contact-info-card reveal reveal-delay-4" style="background-color: var(--clr-purple); border-color: var(--clr-purple);">
+          <div class="contact-info-card__icon" style="background-color: rgba(255,255,255,0.2); color: var(--clr-white);">🏫</div>
+          <div>
+            <h4 class="contact-info-card__title" style="color: var(--clr-white);">Schedule a Tour</h4>
+            <p class="contact-info-card__text" style="color: rgba(255,255,255,0.85);">Want to see our campus in person? Call us or fill out the form to book a guided tour.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MAP PLACEHOLDER ==================== -->
+  <section class="section section--sm" style="background-color: var(--clr-white);">
+    <div class="container text-center reveal">
+      <h3 style="margin-bottom: var(--sp-4);">Find Us on the Map</h3>
+      <p style="margin-bottom: var(--sp-6);">We're located in the heart of Sunshine City, easily accessible by car or public transit.</p>
+      <div style="width: 100%; height: 350px; background-color: var(--clr-purple-50); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; border: 2px dashed var(--clr-purple-light);">
+        <div>
+          <p style="font-size: 3rem; margin-bottom: var(--sp-2);">📍</p>
+          <p style="font-family: var(--ff-heading); font-weight: var(--fw-semi); color: var(--clr-purple);">123 Learning Lane, Sunshine City, SC 12345</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn--outline btn--sm mt-4">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ENROLLMENT CTA ==================== -->
+  <section class="section cta">
+    <div class="container">
+      <div class="reveal">
+        <h2>Ready to Give Your Child the Best Start?</h2>
+        <p>Join the KIDKINDER family today. Our doors are open and our classrooms are full of joy.</p>
+        <div class="cta__actions">
+          <a href="#top" class="btn btn--secondary btn--lg">Back to Top</a>
+          <a href="programs.html" class="btn btn--white btn--lg">View Programs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">🎨 KID<span>KINDER</span></div>
+          <p class="footer__desc">Where learning meets play. Nurturing young minds through creative, play-based education since 2015.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">X</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="about.html" class="footer__link">About Us</a>
+            <a href="programs.html" class="footer__link">Programs</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Programs</h4>
+          <div class="footer__links">
+            <a href="programs.html" class="footer__link">Tiny Explorers</a>
+            <a href="programs.html" class="footer__link">Creative Kids</a>
+            <a href="programs.html" class="footer__link">Bright Minds</a>
+            <a href="programs.html" class="footer__link">Super Stars</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Contact Info</h4>
+          <div class="footer__links">
+            <span class="footer__link">123 Learning Lane</span>
+            <span class="footer__link">Sunshine City, SC 12345</span>
+            <a href="tel:+15551234567" class="footer__link">(555) 123-4567</a>
+            <a href="mailto:hello@kidkinder.com" class="footer__link">hello@kidkinder.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span data-year></span> KIDKINDER. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

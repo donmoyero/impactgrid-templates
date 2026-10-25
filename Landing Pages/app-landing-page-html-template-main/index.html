@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VitalApp — Your all-in-one mobile fitness &amp; diet companion. Personalized workouts, smart meal tracking, and health insights to help you reach your goals.">
+  <meta name="keywords" content="fitness app, diet tracker, workout app, health app, VitalApp, calorie counter, meal planner">
+  <title>VitalApp — Fitness &amp; Diet App for a Healthier You</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%AA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ==================== Header ==================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">VitalApp</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#why" class="nav-link">Why VitalApp</a>
+          <a href="#testimonials" class="nav-link">Testimonials</a>
+          <a href="#download" class="nav-link nav-cta">Get the App</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== Hero ==================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left content -->
+        <div class="hero-content">
+          <div class="hero-eyebrow">Your daily health companion</div>
+
+          <h1>
+            Take charge of your
+            <span class="text-gradient">health &amp; fitness</span>,
+            every day
+          </h1>
+
+          <p class="hero-lead">
+            VitalApp combines personalised workouts, smart meal tracking and
+            real-time insights — so you can reach your goals faster and keep
+            them for life.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary">Start Free Today</a>
+            <a href="#features" class="btn btn-outline">
+              <svg width="20" height="20" viewBox="0 0 80 80" fill="currentColor" aria-hidden="true"><path d="M66 38L20 10a4 4 0 00-6 3v54a4 4 0 006 3l46-28a4 4 0 000-7z"/></svg>
+              Watch Demo
+            </a>
+          </div>
+
+          <div class="hero-badges">
+            <span class="hero-badges-label">Coming soon on</span>
+            <div class="badge-row">
+              <a href="#" class="badge" aria-label="Download on the App Store">
+                <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                <div>
+                  <small>Download on the</small>
+                  <strong>App Store</strong>
+                </div>
+              </a>
+              <a href="#" class="badge" aria-label="Get it on Google Play">
+                <svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                <div>
+                  <small>Get it on</small>
+                  <strong>Google Play</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-rating">
+            <div class="hero-rating-stars" aria-label="4.9 out of 5 stars">★★★★★</div>
+            <p>
+              <strong>4.9</strong> average rating &middot;
+              <strong>50K+</strong> active users
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: phone mockup -->
+        <div class="hero-mockup-wrap">
+          <div class="hero-mockup">
+            <img src="assets/img/screenshot-1.png" alt="VitalApp workout dashboard on phone screen" loading="eager">
+          </div>
+
+          <!-- Floating stat chips -->
+          <div class="float-chip float-chip--1">
+            <div class="float-chip-icon" style="background:#EDE9FE;color:#7C3AED;">🔥</div>
+            <div>
+              <strong>2,450</strong>
+              <span>kcal burned today</span>
+            </div>
+          </div>
+
+          <div class="float-chip float-chip--2">
+            <div class="float-chip-icon" style="background:#CCFBF1;color:#0D9488;">👣</div>
+            <div>
+              <strong>12,340</strong>
+              <span>steps taken</span>
+            </div>
+          </div>
+
+          <div class="float-chip float-chip--3">
+            <div class="float-chip-icon" style="background:#FEF3C7;color:#D97706;">🏆</div>
+            <div>
+              <strong>Day 27</strong>
+              <span>streak active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero stats -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <h3>50<span>K+</span></h3>
+          <p>Active users</p>
+        </div>
+        <div class="hero-stat">
+          <h3>4.9<span>★</span></h3>
+          <p>Average rating</p>
+        </div>
+        <div class="hero-stat">
+          <h3>120<span>M+</span></h3>
+          <p>Calories tracked</p>
+        </div>
+        <div class="hero-stat">
+          <h3>15<span>min</span></h3>
+          <p>Avg. daily workout</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Features ==================== -->
+  <section class="section section--light" id="features">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">App Features</div>
+        <h2 class="section-title">Everything you need to feel your best</h2>
+        <p class="section-sub">
+          From adaptive workouts to smart nutrition logging — VitalApp is your
+          complete wellness toolkit.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Card 1 — wide, featured -->
+        <div class="feature-card feature-card--wide reveal">
+          <div>
+            <div class="feature-icon-badge">🏋️</div>
+            <h3>Personalised Workouts</h3>
+            <p>
+              Adaptive training plans that adjust to your level, schedule and
+              progress — from quick 15-minute HIIT sessions to full strength
+              routines. AI-powered form feedback keeps you moving safely.
+            </p>
+            <span class="feature-tag">Learn more &rarr;</span>
+          </div>
+          <img
+            src="assets/img/screenshot-1.png"
+            alt="VitalApp personalised workout screen"
+            class="features-icon"
+            loading="lazy"
+          >
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card reveal">
+          <div class="feature-icon-badge">🥗</div>
+          <img
+            src="assets/img/screenshot-2.png"
+            alt="VitalApp meal tracking screen"
+            class="features-icon features-icon--sm"
+            loading="lazy"
+          >
+          <h3>Smart Meal Tracking</h3>
+          <p>
+            Log meals with a photo, scan barcodes, or search our database.
+            Automatic macro breakdown with personalised calorie goals.
+          </p>
+          <span class="feature-tag">Track meals &rarr;</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card reveal">
+          <div class="feature-icon-badge">📊</div>
+          <img
+            src="assets/img/screenshot-3.png"
+            alt="VitalApp progress analytics chart"
+            class="features-icon features-icon--sm"
+            loading="lazy"
+          >
+          <h3>Progress &amp; Analytics</h3>
+          <p>
+            Beautiful charts that show your weight, body fat, step count and
+            nutrient trends. Celebrate every milestone with streak badges.
+          </p>
+          <span class="feature-tag">View insights &rarr;</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="feature-card reveal">
+          <div class="feature-icon-badge">💧</div>
+          <img
+            src="assets/img/screenshot-4.png"
+            alt="VitalApp hydration reminder screen"
+            class="features-icon features-icon--sm"
+            loading="lazy"
+          >
+          <h3>Hydration &amp; Habit Reminders</h3>
+          <p>
+            Smart nudges for water, movement breaks and mindfulness — timed
+            to your daily routine so you stay on track effortlessly.
+          </p>
+          <span class="feature-tag">Build habits &rarr;</span>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="feature-card reveal">
+          <div class="feature-icon-badge">😴</div>
+          <img
+            src="assets/img/screenshot-5.png"
+            alt="VitalApp sleep and recovery insights"
+            class="features-icon features-icon--sm"
+            loading="lazy"
+          >
+          <h3>Sleep &amp; Recovery Insights</h3>
+          <p>
+            Understand your sleep patterns, HRV and recovery score. Get
+            personalised recommendations for optimal rest and performance.
+          </p>
+          <span class="feature-tag">Improve sleep &rarr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Why VitalApp ==================== -->
+  <section class="section section--white" id="why">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow section-eyebrow--teal">Why Choose Us</div>
+        <h2 class="section-title">One app. Your entire wellbeing.</h2>
+        <p class="section-sub">
+          VitalApp brings together every dimension of health into a single,
+          beautiful experience.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-visual">
+          <div class="why-dashboard">
+            <img
+              src="assets/img/app-landing-page.jpg"
+              alt="VitalApp dashboard on a tablet"
+              loading="lazy"
+            >
+          </div>
+          <div class="why-phone">
+            <img
+              src="assets/img/feature.png"
+              alt="VitalApp feature details on phone"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <div>
+          <div class="why-head">
+            <h3 style="font-size:1.45rem;margin-bottom: 12px;">
+              Built by health experts, designed for real life
+            </h3>
+            <p class="section-sub" style="font-size:0.98rem;max-width:480px;">
+              Every feature is grounded in sports science and nutrition
+              research, wrapped in an interface you will actually enjoy using.
+            </p>
+          </div>
+
+          <div class="why-list">
+            <div class="why-item">
+              <div class="why-item-icon">🎯</div>
+              <div>
+                <h3>AI-powered personalisation</h3>
+                <p>Your plan adapts as you progress — no two users get the same experience.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon">🔗</div>
+              <div>
+                <h3>Wearable &amp; app sync</h3>
+                <p>Connect Apple Watch, Fitbit, Garmin, Apple Health and Google Fit for seamless data.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon">🤝</div>
+              <div>
+                <h3>Community challenges</h3>
+                <p>Join group goals, share achievements and stay motivated together.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon">🔒</div>
+              <div>
+                <h3>Privacy-first design</h3>
+                <p>Your health data stays yours. End-to-end encryption and GDPR compliant.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#download" class="btn btn-primary">Get Started Free</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Testimonials ==================== -->
+  <section class="section section--light" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">Testimonials</div>
+        <h2 class="section-title">Loved by thousands</h2>
+        <p class="section-sub">
+          Hear from real users who transformed their health with VitalApp.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            &ldquo;VitalApp completely changed how I approach my fitness. The
+            personalised workouts fit perfectly into my busy schedule, and the
+            meal tracking is so easy I actually stick with it.&rdquo;
+          </blockquote>
+          <div class="testimonial-person">
+            <img
+              src="assets/img/testimonial-1.jpg"
+              alt="Sarah Martinez"
+              loading="lazy"
+            >
+            <div>
+              <strong>Sarah Martinez</strong>
+              <span>Yoga instructor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            &ldquo;Training for my first marathon felt overwhelming until I
+            found VitalApp. The adaptive plans and recovery insights kept me
+            injury-free and ready on race day.&rdquo;
+          </blockquote>
+          <div class="testimonial-person">
+            <img
+              src="assets/img/testimonial-2.jpg"
+              alt="James Kim"
+              loading="lazy"
+            >
+            <div>
+              <strong>James Kim</strong>
+              <span>Marathon runner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            &ldquo;After having my baby, I struggled to find time for myself.
+            VitalApp's quick 15-minute workouts and gentle habit reminders
+            helped me rebuild my routine.&rdquo;
+          </blockquote>
+          <div class="testimonial-person">
+            <img
+              src="assets/img/testimonial-3.jpg"
+              alt="Priya Rathore"
+              loading="lazy"
+            >
+            <div>
+              <strong>Priya Rathore</strong>
+              <span>New mom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            &ldquo;The analytics alone are worth it. I can see exactly how my
+            sleep, nutrition and training correlate. It is like having a
+            personal coach in my pocket.&rdquo;
+          </blockquote>
+          <div class="testimonial-person">
+            <img
+              src="assets/img/testimonial-4.jpg"
+              alt="David Lowe"
+              loading="lazy"
+            >
+            <div>
+              <strong>David Lowe</strong>
+              <span>Software engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Download CTA ==================== -->
+  <section class="section download" id="download">
+    <div class="container">
+      <div class="download-grid">
+        <!-- Left phone -->
+        <div class="download-phones" style="justify-content:flex-end;">
+          <div class="download-phone" style="transform:rotate(-4deg) translateY(10px);">
+            <img
+              src="assets/img/app-1.png"
+              alt="VitalApp on phone screen"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <!-- Center content -->
+        <div class="download-content">
+          <div class="download-eyebrow">Get Started Today</div>
+          <h2>Start your 14-day free trial</h2>
+          <p>
+            Join over 50,000 people who have transformed their health.
+            No credit card required. Cancel anytime.
+          </p>
+
+          <div class="badge-row">
+            <a href="#" class="badge" aria-label="Download on the App Store">
+              <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <div>
+                <small>Download on the</small>
+                <strong>App Store</strong>
+              </div>
+            </a>
+            <a href="#" class="badge" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+              <div>
+                <small>Get it on</small>
+                <strong>Google Play</strong>
+              </div>
+            </a>
+          </div>
+
+          <!-- Newsletter form -->
+          <form class="newsletter" data-form novalidate>
+            <p class="newsletter-title">Want tips &amp; updates?</p>
+            <p class="newsletter-sub">Get our weekly wellness newsletter straight to your inbox.</p>
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="Enter your email"
+                  required
+                  aria-label="Email address"
+                >
+              </div>
+              <button type="submit" class="btn btn-light" style="padding:13px 22px;">Subscribe</button>
+            </div>
+            <div class="form-ok">Thanks! You're subscribed.</div>
+            <div class="form-err">Please enter a valid email address.</div>
+          </form>
+        </div>
+
+        <!-- Right phone -->
+        <div class="download-phones" style="justify-content:flex-start;">
+          <div class="download-phone" style="transform:rotate(4deg) translateY(10px);">
+            <img
+              src="assets/img/app-2.png"
+              alt="VitalApp on phone screen"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <img
+            src="assets/img/logo.png"
+            alt="VitalApp logo"
+            class="footer-logo-img"
+            loading="lazy"
+          >
+          <p>
+            Your all-in-one mobile fitness &amp; diet companion. Move more.
+            Eat better. Live vital.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zm-47.2 224.5c-7.8 19.6-23.1 34.9-42.7 42.7-29.5 11.7-99.5 9-132.6 9s-103.1 2.7-132.6-9c-19.6-7.8-34.9-23.1-42.7-42.7-11.7-29.5-9-99.5-9-132.6s-2.7-103.1 9-132.6c7.8-19.6 23.1-34.9 42.7-42.7 29.5-11.7 99.5-9 132.6-9s103.1-2.7 132.6 9c19.6 7.8 34.9 23.1 42.7 42.7 11.7 29.5 9 99.5 9 132.6s2.7 103.1-9 132.6z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor"><path d="M549.7 124.1c-6.3-23.7-24.9-42.3-48.6-48.6C458.8 64 288 64 288 64S117.2 64 74.9 75.5c-23.7 6.3-42.3 24.9-48.6 48.6C14.8 166.4 14.8 256 14.8 256s0 89.6 11.5 131.9c6.3 23.7 24.9 42.3 48.6 48.6C117.2 448 288 448 288 448s170.8 0 213.1-11.5c23.7-6.3 42.3-24.9 48.6-48.6 11.5-42.3 11.5-131.9 11.5-131.9s0-89.6-11.5-131.9zM232.3 337.6V174.4l142.7 81.6-142.7 81.6z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Explore -->
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#why">Why VitalApp</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Kit</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4>Contact</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-item-icon">✉</div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-text">hello@vitalapp.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-text">San Francisco, CA</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div>
+                <span class="contact-item-label">Support hours</span>
+                <span class="contact-item-text">Mon–Fri, 9am–6pm PT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> VitalApp. All rights reserved.</span>
+        <span>
+          <a href="#">Privacy Policy</a> &middot;
+          <a href="#">Terms of Service</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== Back to top ==================== -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ==================== Scripts ==================== -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

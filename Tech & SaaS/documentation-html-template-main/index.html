@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocuKit — Software Documentation &amp; API Reference Template</title>
+  <meta name="description" content="DocuKit is a clean, framework-free documentation and API reference HTML template. Docs sidebar, code blocks, components gallery, responsive grid, theming and an API endpoint table.">
+  <meta name="keywords" content="documentation template, API reference, HTML template, docs sidebar, code blocks, responsive documentation, DocuKit, developer docs">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%98%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-icon" aria-hidden="true">&#128216;</span>
+          DocuKit
+        </a>
+
+        <div class="docs-search">
+          <svg class="docs-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" class="docs-search-input" placeholder="Search docs, components, API…" aria-label="Search the documentation">
+          <kbd class="docs-search-kbd">Ctrl K</kbd>
+        </div>
+
+        <div class="nav-links">
+          <a href="#getting-started" class="nav-link active">Overview</a>
+          <a href="#components" class="nav-link">Components</a>
+          <a href="#api" class="nav-link">API</a>
+          <a href="#theming" class="nav-link">Theming</a>
+          <a href="#api" class="nav-cta">Get Started</a>
+        </div>
+
+        <div class="docs-version">
+          <select class="docs-version-select" aria-label="Documentation version">
+            <option>v2.4.0</option>
+            <option>v2.3.1</option>
+            <option>v2.2.0</option>
+            <option>v1.9.4</option>
+          </select>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page hero: slim docs bar -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <span>Documentation</span>
+        </nav>
+        <h1>DocuKit Documentation</h1>
+        <p>A clean, framework-free documentation site and API reference. Everything you need to ship beautiful developer docs — no build step required.</p>
+      </div>
+      <div class="hero-badges">
+        <span class="tag blue">v2.4.0</span>
+        <span class="tag sky">MIT License</span>
+        <span class="tag">12.4k &#9733;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Docs layout -->
+  <div class="docs-layout container has-toc">
+
+    <!-- Sidebar -->
+    <button class="docs-sidebar-toggle" aria-expanded="false">
+      <span>&#9776;</span> Table of Contents
+    </button>
+    <aside class="docs-sidebar" aria-label="Documentation sections">
+      <nav class="docs-nav">
+        <p class="docs-nav-label">Getting Started</p>
+        <a href="#getting-started" class="docs-nav-link active"><span class="dot"></span>Introduction</a>
+        <a href="#installation" class="docs-nav-link"><span class="dot"></span>Installation</a>
+        <a href="#usage" class="docs-nav-link"><span class="dot"></span>Usage</a>
+
+        <p class="docs-nav-label">Guide</p>
+        <a href="#components" class="docs-nav-link"><span class="dot"></span>Components</a>
+        <a href="#responsive" class="docs-nav-link"><span class="dot"></span>Responsive Grid</a>
+        <a href="#theming" class="docs-nav-link"><span class="dot"></span>Theming</a>
+
+        <p class="docs-nav-label">Reference</p>
+        <a href="#api" class="docs-nav-link"><span class="dot"></span>API Reference</a>
+        <a href="#accessibility" class="docs-nav-link"><span class="dot"></span>Accessibility</a>
+
+        <div class="docs-nav-side">
+          <a href="404.html" class="mini">&#128195; Changelog</a>
+          <a href="404.html" class="mini">&#127903; Examples</a>
+          <a href="404.html" class="mini">&#9993; Support</a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="docs-main" id="main">
+
+      <!-- Getting Started -->
+      <section id="getting-started" class="docs-section">
+        <span class="section-kicker">Getting Started</span>
+        <h2>Introduction <a href="#getting-started" class="section-anchor" aria-label="Link to Introduction">#</a></h2>
+        <p class="lead">DocuKit gives you a complete documentation site out of the box — a sticky sidebar, a content column, a mini table of contents, and beautifully styled code blocks. Built with semantic HTML5, CSS custom properties, and vanilla JavaScript.</p>
+        <p>Every section is anchored, every code block is copy-ready, and the whole layout adapts from a large desktop monitor down to a phone. No frameworks, no dependencies, no build tools.</p>
+
+        <ul class="feature-list">
+          <li><span class="fi">&#9889;</span><div><strong>Zero build step</strong><span>Open <code class="inline-code">index.html</code> and go.</span></div></li>
+          <li><span class="fi">&#127744;</span><div><strong>Design tokens</strong><span>Colors, fonts and spacing as CSS variables.</span></div></li>
+          <li><span class="fi">&#9883;</span><div><strong>Copy buttons</strong><span>One click copies any code snippet.</span></div></li>
+          <li><span class="fi">&#128270;</span><div><strong>Instant search</strong><span>Filters the sidebar as you type.</span></div></li>
+        </ul>
+
+        <div class="screenshot-frame reveal">
+          <img src="assets/img/bootstrap-documentation-template.png" alt="The DocuKit documentation template rendered in a browser with a sidebar, content column and code blocks" loading="lazy" width="800" height="500">
+          <p class="screenshot-caption"><span>&#128247;</span> DocuKit renders a full docs site with sidebar navigation, syntax-highlighted code and an API table.</p>
+        </div>
+
+        <h3>Quick start</h3>
+        <p>Clone the template, open it in your editor, and start writing. Here is the fastest way to get a local preview running:</p>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">terminal</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-com"># clone the template</span>
+<span class="tok-kw">git</span> clone <span class="tok-str">https://github.com/uiuxlabz/docukit.git</span>
+<span class="tok-kw">cd</span> docukit
+
+<span class="tok-com"># serve it locally</span>
+<span class="tok-kw">npx</span> serve . <span class="tok-num">-l</span> <span class="tok-num">3000</span>
+<span class="tok-com"># open http://localhost:3000</span></code></pre>
+        </div>
+
+        <div class="callout callout-info">
+          <span class="callout-icon" aria-hidden="true">&#8505;</span>
+          <div><strong>New to DocuKit?</strong> Start here — this page walks through installation, usage, components, theming and the API reference in order.</div>
+        </div>
+      </section>
+
+      <!-- Installation -->
+      <section id="installation" class="docs-section">
+        <span class="section-kicker">Getting Started</span>
+        <h2>Installation <a href="#installation" class="section-anchor" aria-label="Link to Installation">#</a></h2>
+        <p class="lead">Install DocuKit with your package manager of choice. Because it is framework-free, you only copy two files — <code class="inline-code">style.css</code> and <code class="inline-code">main.js</code> — into your project.</p>
+
+        <h3>npm</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">terminal</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-kw">npm</span> install docukit</code></pre>
+        </div>
+
+        <h3>yarn</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">terminal</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-kw">yarn</span> add docukit</code></pre>
+        </div>
+
+        <h3>pnpm</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">terminal</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-kw">pnpm</span> add docukit</code></pre>
+        </div>
+
+        <h3>Scaffold a new docs site with the CLI</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">terminal</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-kw">npx</span> docukit init <span class="tok-str">my-docs</span>
+<span class="tok-kw">cd</span> my-docs
+<span class="tok-kw">npx</span> docukit dev</code></pre>
+        </div>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon" aria-hidden="true">&#128161;</span>
+          <div><strong>Prefer a single file?</strong> Grab <code class="inline-code">assets/css/style.css</code> and drop it in — the template works with a plain link tag and one script tag.</div>
+        </div>
+      </section>
+
+      <!-- Usage -->
+      <section id="usage" class="docs-section">
+        <span class="section-kicker">Getting Started</span>
+        <h2>Usage <a href="#usage" class="section-anchor" aria-label="Link to Usage">#</a></h2>
+        <p class="lead">Wire up the stylesheet and script, then write your sections. The sidebar, mini-TOC and search all activate from a few lines of markup.</p>
+
+        <h3>Link the assets</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">index.html</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-tag">&lt;head&gt;</span>
+  <span class="tok-tag">&lt;link</span> <span class="tok-prop">rel</span>=<span class="tok-str">&quot;stylesheet&quot;</span> <span class="tok-prop">href</span>=<span class="tok-str">&quot;assets/css/style.css&quot;</span><span class="tok-tag">&gt;</span>
+<span class="tok-tag">&lt;/head&gt;</span>
+<span class="tok-tag">&lt;body&gt;</span>
+  <span class="tok-com">&lt;!-- … docs layout … --&gt;</span>
+  <span class="tok-tag">&lt;script</span> <span class="tok-prop">src</span>=<span class="tok-str">&quot;assets/js/main.js&quot;</span><span class="tok-tag">&gt;&lt;/script&gt;</span>
+<span class="tok-tag">&lt;/body&gt;</span></code></pre>
+        </div>
+
+        <h3>Initialize the sidebar</h3>
+        <p>Give each section an <code class="inline-code">id</code>, then link to it from the sidebar. DocuKit keeps the active link in sync as you scroll.</p>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">index.html</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-tag">&lt;aside</span> <span class="tok-prop">class</span>=<span class="tok-str">&quot;docs-sidebar&quot;</span><span class="tok-tag">&gt;</span>
+  <span class="tok-tag">&lt;a</span> <span class="tok-prop">href</span>=<span class="tok-str">&quot;#installation&quot;</span> <span class="tok-prop">class</span>=<span class="tok-str">&quot;docs-nav-link&quot;</span><span class="tok-tag">&gt;</span>Installation<span class="tok-tag">&lt;/a&gt;</span>
+  <span class="tok-tag">&lt;a</span> <span class="tok-prop">href</span>=<span class="tok-str">&quot;#components&quot;</span> <span class="tok-prop">class</span>=<span class="tok-str">&quot;docs-nav-link&quot;</span><span class="tok-tag">&gt;</span>Components<span class="tok-tag">&lt;/a&gt;</span>
+<span class="tok-tag">&lt;/aside&gt;</span>
+
+<span class="tok-tag">&lt;main&gt;</span>
+  <span class="tok-tag">&lt;section</span> <span class="tok-prop">id</span>=<span class="tok-str">&quot;installation&quot;</span><span class="tok-tag">&gt;</span> <span class="tok-com">&lt;!-- … --&gt;</span> <span class="tok-tag">&lt;/section&gt;</span>
+  <span class="tok-tag">&lt;section</span> <span class="tok-prop">id</span>=<span class="tok-str">&quot;components&quot;</span><span class="tok-tag">&gt;</span> <span class="tok-com">&lt;!-- … --&gt;</span> <span class="tok-tag">&lt;/section&gt;</span>
+<span class="tok-tag">&lt;/main&gt;</span></code></pre>
+        </div>
+
+        <h3>Configure options</h3>
+        <p>Behavior is controlled through <code class="inline-code">data-*</code> attributes, so there is no config file to maintain.</p>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">main.js</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-com">// options passed via data attributes</span>
+<span class="tok-kw">const</span> <span class="tok-fn">docukit</span>({
+  sidebar: <span class="tok-str">'sticky'</span>,   <span class="tok-com">// sticky | overlay | off</span>
+  search:  <span class="tok-var">true</span>,         <span class="tok-com">// sidebar filter on keyup</span>
+  toc:     <span class="tok-str">'right'</span>,     <span class="tok-com">// right mini table of contents</span>
+  smooth:  <span class="tok-var">true</span>          <span class="tok-com">// animated anchor scrolling</span>
+})</code></pre>
+        </div>
+
+        <div class="callout callout-warn">
+          <span class="callout-icon" aria-hidden="true">&#9888;</span>
+          <div><strong>Anchor IDs must be unique.</strong> Duplicate <code class="inline-code">id</code> values break sidebar highlighting and mini-TOC links.</div>
+        </div>
+      </section>
+
+      <!-- Components -->
+      <section id="components" class="docs-section">
+        <span class="section-kicker">Guide</span>
+        <h2>Components <a href="#components" class="section-anchor" aria-label="Link to Components">#</a></h2>
+        <p class="lead">A small library of ready-made UI components. Each one ships as markup plus a few classes — copy the snippet, drop in your content, done.</p>
+
+        <div class="component-grid">
+          <article class="component-card reveal">
+            <div class="component-card-media">
+              <span class="component-card-tag">Badge</span>
+              <img src="assets/img/pill.jpg" alt="Pill-shaped badge component preview" loading="lazy" width="500" height="400">
+            </div>
+            <div class="component-card-body">
+              <h3>Pill Badge</h3>
+              <p>A rounded pill label for statuses, counts and categories. Ships in blue, sky and neutral variants.</p>
+              <div class="component-card-meta">
+                <div class="tags"><span class="tag blue">.tag</span><span class="tag">12 lines</span></div>
+                <span class="tag sky">Stable</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="component-card reveal">
+            <div class="component-card-media">
+              <span class="component-card-tag">Avatar</span>
+              <img src="assets/img/circle.jpg" alt="Circular avatar component preview" loading="lazy" width="500" height="400">
+            </div>
+            <div class="component-card-body">
+              <h3>Circle Avatar</h3>
+              <p>A circular avatar with status ring, initials fallback and a 24px to 96px size scale.</p>
+              <div class="component-card-meta">
+                <div class="tags"><span class="tag blue">.avatar</span><span class="tag">18 lines</span></div>
+                <span class="tag sky">Stable</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="component-card reveal">
+            <div class="component-card-media">
+              <span class="component-card-tag">Surface</span>
+              <img src="assets/img/rounded.jpg" alt="Rounded card surface component preview" loading="lazy" width="500" height="400">
+            </div>
+            <div class="component-card-body">
+              <h3>Rounded Card</h3>
+              <p>A soft-cornered surface for grouping content, with hover elevation and optional media header.</p>
+              <div class="component-card-meta">
+                <div class="tags"><span class="tag blue">.card</span><span class="tag">22 lines</span></div>
+                <span class="tag sky">Stable</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="component-card reveal">
+            <div class="component-card-media">
+              <span class="component-card-tag">Media</span>
+              <img src="assets/img/thumbnail.jpg" alt="Thumbnail media component preview" loading="lazy" width="500" height="400">
+            </div>
+            <div class="component-card-body">
+              <h3>Thumbnail</h3>
+              <p>A fixed-ratio image thumbnail with lazy loading, zoom-on-hover and a caption strip.</p>
+              <div class="component-card-meta">
+                <div class="tags"><span class="tag blue">.thumb</span><span class="tag">14 lines</span></div>
+                <span class="tag sky">Beta</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <h3>Example — Pill badge</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">index.html</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-tag">&lt;span</span> <span class="tok-prop">class</span>=<span class="tok-str">&quot;tag blue&quot;</span><span class="tok-tag">&gt;</span>New<span class="tok-tag">&lt;/span&gt;</span>
+<span class="tok-tag">&lt;span</span> <span class="tok-prop">class</span>=<span class="tok-str">&quot;tag sky&quot;</span><span class="tok-tag">&gt;</span>v2.4.0<span class="tok-tag">&lt;/span&gt;</span>
+<span class="tok-tag">&lt;span</span> <span class="tok-prop">class</span>=<span class="tok-str">&quot;tag&quot;</span><span class="tok-tag">&gt;</span>14 components<span class="tok-tag">&lt;/span&gt;</span></code></pre>
+        </div>
+      </section>
+
+      <!-- Responsive Grid -->
+      <section id="responsive" class="docs-section">
+        <span class="section-kicker">Guide</span>
+        <h2>Responsive Grid <a href="#responsive" class="section-anchor" aria-label="Link to Responsive Grid">#</a></h2>
+        <p class="lead">The layout is fluid at every size. The sidebar sticks on desktop, collapses to an overlay drawer on tablet, and the whole page stacks on phones — all driven by two breakpoints.</p>
+
+        <div class="responsive-preview reveal">
+          <img src="assets/img/responsive.jpg" alt="DocuKit responsive grid showing the documentation layout at desktop, tablet and mobile breakpoints" loading="lazy" width="1200" height="400">
+        </div>
+
+        <div class="breakpoint-grid">
+          <div class="breakpoint">
+            <span class="bp-icon" aria-hidden="true">&#128421;</span>
+            <h4>Desktop</h4>
+            <p class="bp-range">&gt; 1180px</p>
+            <p>Sticky sidebar, content column and a right-hand mini table of contents.</p>
+          </div>
+          <div class="breakpoint">
+            <span class="bp-icon" aria-hidden="true">&#128241;</span>
+            <h4>Tablet</h4>
+            <p class="bp-range">721 – 980px</p>
+            <p>Sidebar collapses to an overlay drawer opened from the TOC button.</p>
+          </div>
+          <div class="breakpoint">
+            <span class="bp-icon" aria-hidden="true">&#128241;</span>
+            <h4>Mobile</h4>
+            <p class="bp-range">&le; 720px</p>
+            <p>Everything stacks to a single column; search wraps to its own row.</p>
+          </div>
+        </div>
+
+        <h3>12-column grid demo</h3>
+        <p>The template uses a 12-column mental grid. This demo shows common spans — resize the window to watch them reflow.</p>
+        <div class="grid-demo" aria-hidden="true">
+          <div class="cell" style="grid-column: span 12">span 12 — full width</div>
+          <div class="cell" style="grid-column: span 6">span 6</div>
+          <div class="cell" style="grid-column: span 6">span 6</div>
+          <div class="cell" style="grid-column: span 4">span 4</div>
+          <div class="cell" style="grid-column: span 4">span 4</div>
+          <div class="cell" style="grid-column: span 4">span 4</div>
+          <div class="cell" style="grid-column: span 3">span 3</div>
+          <div class="cell" style="grid-column: span 3">span 3</div>
+          <div class="cell" style="grid-column: span 3">span 3</div>
+          <div class="cell" style="grid-column: span 3">span 3</div>
+        </div>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon" aria-hidden="true">&#128161;</span>
+          <div><strong>Clamp() everywhere.</strong> Typography and spacing use <code class="inline-code">clamp()</code>, so nothing jumps between breakpoints — it scales smoothly instead.</div>
+        </div>
+      </section>
+
+      <!-- Theming -->
+      <section id="theming" class="docs-section">
+        <span class="section-kicker">Guide</span>
+        <h2>Theming <a href="#theming" class="section-anchor" aria-label="Link to Theming">#</a></h2>
+        <p class="lead">Every color, font and spacing value is a CSS custom property. Override the tokens in <code class="inline-code">:root</code> and the whole template restyles itself — no class surgery.</p>
+
+        <div class="swatch-grid">
+          <div class="swatch"><div class="swatch-color" style="background:#1E293B"></div><div class="swatch-meta"><span class="swatch-name">Slate</span><span class="swatch-hex">#1E293B</span></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#2563EB"></div><div class="swatch-meta"><span class="swatch-name">Blue</span><span class="swatch-hex">#2563EB</span></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#0EA5E9"></div><div class="swatch-meta"><span class="swatch-name">Sky</span><span class="swatch-hex">#0EA5E9</span></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#F8FAFC"></div><div class="swatch-meta"><span class="swatch-name">Light</span><span class="swatch-hex">#F8FAFC</span></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#FFFFFF"></div><div class="swatch-meta"><span class="swatch-name">White</span><span class="swatch-hex">#FFFFFF</span></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#64748B"></div><div class="swatch-meta"><span class="swatch-name">Gray</span><span class="swatch-hex">#64748B</span></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#E2E8F0"></div><div class="swatch-meta"><span class="swatch-name">Line</span><span class="swatch-hex">#E2E8F0</span></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#0F172A"></div><div class="swatch-meta"><span class="swatch-name">Code</span><span class="swatch-hex">#0F172A</span></div></div>
+        </div>
+
+        <h3>Customize the palette</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">style.css</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-tag">:root</span> {
+  <span class="tok-prop">--slate</span>: <span class="tok-num">#1E293B</span>;
+  <span class="tok-prop">--blue</span>:  <span class="tok-num">#2563EB</span>;
+  <span class="tok-prop">--sky</span>:   <span class="tok-num">#0EA5E9</span>;
+  <span class="tok-prop">--gray</span>:  <span class="tok-num">#64748B</span>;
+  <span class="tok-prop">--code</span>:  <span class="tok-num">#0F172A</span>;
+  <span class="tok-prop">--font-heading</span>: <span class="tok-str">'Sora'</span>, sans-serif;
+  <span class="tok-prop">--font-body</span>:    <span class="tok-str">'IBM Plex Sans'</span>, sans-serif;
+}</code></pre>
+        </div>
+
+        <h3>Typography scale</h3>
+        <p>Headings use <strong>Sora</strong> (600/700); body copy uses <strong>IBM Plex Sans</strong> (400/500). The scale is fluid, driven by <code class="inline-code">clamp()</code>.</p>
+        <div class="typo-demo">
+          <div class="sample"><span class="lbl">h1 · clamp(1.6rem → 2.2rem)</span><div style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;font-family:var(--font-heading);color:var(--slate)">Build better docs.</div></div>
+          <div class="sample"><span class="lbl">h2 · clamp(1.4rem → 1.75rem)</span><div style="font-size:clamp(1.4rem,2.4vw,1.75rem);font-weight:700;font-family:var(--font-heading);color:var(--slate)">A clean documentation site.</div></div>
+          <div class="sample"><span class="lbl">body · 1rem / 1.7</span><div style="color:var(--slate-600)">Body copy in IBM Plex Sans stays readable on any screen.</div></div>
+        </div>
+      </section>
+
+      <!-- API Reference -->
+      <section id="api" class="docs-section">
+        <span class="section-kicker">Reference</span>
+        <h2>API Reference <a href="#api" class="section-anchor" aria-label="Link to API Reference">#</a></h2>
+        <p class="lead">Every endpoint is available under <code class="inline-code">https://api.docukit.dev/v2</code>. Authentication uses a bearer token in the <code class="inline-code">Authorization</code> header.</p>
+
+        <div class="table-wrap">
+          <table class="docs-table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Endpoint</th>
+                <th>Description</th>
+                <th>Auth</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="method method-get">GET</span></td>
+                <td><code class="endpoint">/docs</code></td>
+                <td>List all documentation sections</td>
+                <td class="lock"><span class="yes">&#10003;</span> optional</td>
+              </tr>
+              <tr>
+                <td><span class="method method-get">GET</span></td>
+                <td><code class="endpoint">/docs/:slug</code></td>
+                <td>Fetch a single section by slug</td>
+                <td class="lock"><span class="yes">&#10003;</span> optional</td>
+              </tr>
+              <tr>
+                <td><span class="method method-post">POST</span></td>
+                <td><code class="endpoint">/docs</code></td>
+                <td>Create a new documentation section</td>
+                <td class="lock">&#128274; required</td>
+              </tr>
+              <tr>
+                <td><span class="method method-put">PUT</span></td>
+                <td><code class="endpoint">/docs/:slug</code></td>
+                <td>Replace an existing section entirely</td>
+                <td class="lock">&#128274; required</td>
+              </tr>
+              <tr>
+                <td><span class="method method-delete">DELETE</span></td>
+                <td><code class="endpoint">/docs/:slug</code></td>
+                <td>Remove a section and its versions</td>
+                <td class="lock">&#128274; required</td>
+              </tr>
+              <tr>
+                <td><span class="method method-get">GET</span></td>
+                <td><code class="endpoint">/search?q=grid</code></td>
+                <td>Full-text search across all docs</td>
+                <td class="lock"><span class="yes">&#10003;</span> optional</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Example request</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">curl</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-kw">curl</span> <span class="tok-str">https://api.docukit.dev/v2/docs</span> \
+  <span class="tok-kw">-H</span> <span class="tok-str">&quot;Authorization: Bearer &lt;token&gt;&quot;</span> \
+  <span class="tok-kw">-H</span> <span class="tok-str">&quot;Accept: application/json&quot;</span></code></pre>
+        </div>
+
+        <h3>Example response</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">200 OK · application/json</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code>{
+  <span class="tok-kw">&quot;status&quot;</span>: <span class="tok-str">&quot;ok&quot;</span>,
+  <span class="tok-kw">&quot;data&quot;</span>: [
+    {
+      <span class="tok-kw">&quot;slug&quot;</span>: <span class="tok-str">&quot;installation&quot;</span>,
+      <span class="tok-kw">&quot;title&quot;</span>: <span class="tok-str">&quot;Installation&quot;</span>,
+      <span class="tok-kw">&quot;updated&quot;</span>: <span class="tok-str">&quot;2026-08-30&quot;</span>,
+      <span class="tok-kw">&quot;views&quot;</span>: <span class="tok-num">12403</span>
+    }
+  ],
+  <span class="tok-kw">&quot;pagination&quot;</span>: { <span class="tok-kw">&quot;page&quot;</span>: <span class="tok-num">1</span>, <span class="tok-kw">&quot;limit&quot;</span>: <span class="tok-num">20</span> }
+}</code></pre>
+        </div>
+
+        <div class="callout callout-warn">
+          <span class="callout-icon" aria-hidden="true">&#9888;</span>
+          <div><strong>Rate limits.</strong> Unauthenticated requests are limited to 60 per minute. Add an <code class="inline-code">Authorization</code> header to raise this to 1,000.</div>
+        </div>
+      </section>
+
+      <!-- Accessibility -->
+      <section id="accessibility" class="docs-section">
+        <span class="section-kicker">Reference</span>
+        <h2>Accessibility <a href="#accessibility" class="section-anchor" aria-label="Link to Accessibility">#</a></h2>
+        <p class="lead">DocuKit is built to be usable by everyone. The markup is semantic, interactive elements are keyboard-friendly, and motion is optional.</p>
+
+        <ul class="a11y-list">
+          <li><span class="ck">&#10003;</span><div><strong>Semantic landmarks</strong><span>Header, nav, main, aside and footer map to the correct ARIA roles out of the box.</span></div></li>
+          <li><span class="ck">&#10003;</span><div><strong>Keyboard navigation</strong><span>Every interactive control — nav, TOC drawer, copy buttons, search — is reachable and operable with Tab.</span></div></li>
+          <li><span class="ck">&#10003;</span><div><strong>Visible focus states</strong><span>Focus rings are clearly styled so the active element is never lost.</span></div></li>
+          <li><span class="ck">&#10003;</span><div><strong>Reduced motion</strong><span><code class="inline-code">prefers-reduced-motion</code> disables reveal animations and smooth scrolling.</span></div></li>
+          <li><span class="ck">&#10003;</span><div><strong>Color contrast</strong><span>The token palette meets WCAG AA contrast on both light and code-dark surfaces.</span></div></li>
+        </ul>
+
+        <div class="callout callout-info">
+          <span class="callout-icon" aria-hidden="true">&#8505;</span>
+          <div><strong>Goal: WCAG 2.1 AA.</strong> DocuKit targets level AA conformance and includes <code class="inline-code">aria-label</code>s, <code class="inline-code">aria-expanded</code> toggles and descriptive alt text on every image.</div>
+        </div>
+
+        <h3>Motion-safe guard</h3>
+        <div class="code-block">
+          <div class="code-block-head">
+            <span class="code-block-dots"><i></i><i></i><i></i></span>
+            <span class="code-block-title">style.css</span>
+            <button class="code-block-copy" type="button">Copy</button>
+          </div>
+          <pre><code><span class="tok-tag">@media</span> (<span class="tok-prop">prefers-reduced-motion</span>: <span class="tok-kw">reduce</span>) {
+  <span class="tok-prop">html</span> { <span class="tok-prop">scroll-behavior</span>: <span class="tok-kw">auto</span>; }
+  <span class="tok-prop">.reveal</span> { <span class="tok-prop">opacity</span>: <span class="tok-num">1</span>; <span class="tok-prop">transform</span>: <span class="tok-kw">none</span>; }
+}</code></pre>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Mini TOC -->
+    <aside class="docs-toc" aria-label="On this page">
+      <p class="docs-toc-title">On this page</p>
+      <a href="#getting-started" class="docs-toc-link active">Introduction</a>
+      <a href="#installation" class="docs-toc-link">Installation</a>
+      <a href="#usage" class="docs-toc-link">Usage</a>
+      <a href="#components" class="docs-toc-link">Components</a>
+      <a href="#responsive" class="docs-toc-link">Responsive Grid</a>
+      <a href="#theming" class="docs-toc-link">Theming</a>
+      <a href="#api" class="docs-toc-link">API Reference</a>
+      <a href="#accessibility" class="docs-toc-link">Accessibility</a>
+    </aside>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <span class="nav-logo-icon" aria-hidden="true">&#128216;</span>
+            DocuKit
+          </a>
+          <p>A clean, framework-free documentation and API reference template. Ship beautiful developer docs with zero build tooling.</p>
+          <div class="footer-social">
+            <a href="404.html" aria-label="GitHub">&#128279;</a>
+            <a href="404.html" aria-label="X / Twitter">&#120125;</a>
+            <a href="404.html" aria-label="Discord">&#128172;</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#getting-started">Overview</a>
+          <a href="#installation">Installation</a>
+          <a href="#usage">Usage</a>
+          <a href="#theming">Theming</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#components">Components</a>
+          <a href="#responsive">Responsive Grid</a>
+          <a href="#api">API Reference</a>
+          <a href="#accessibility">Accessibility</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="404.html">About</a>
+          <a href="404.html">Changelog</a>
+          <a href="404.html">Support</a>
+          <a href="404.html">License</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> DocuKit. All rights reserved.</p>
+        <p>Template by <a href="https://tally.so/r/q4q1L9">uiuxlabz</a> &middot; Built with pure HTML, CSS &amp; JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    ;(function () {
+      'use strict'
+
+      /* ——— Sidebar drawer (≤980px) ——— */
+      var sb = document.querySelector('.docs-sidebar')
+      var sbToggle = document.querySelector('.docs-sidebar-toggle')
+      var backdrop = document.createElement('div')
+      backdrop.className = 'docs-sidebar-backdrop'
+      document.body.appendChild(backdrop)
+      function closeSb () {
+        if (sb) sb.classList.remove('open')
+        if (sbToggle) sbToggle.setAttribute('aria-expanded', 'false')
+        backdrop.classList.remove('show')
+      }
+      if (sbToggle && sb) {
+        sbToggle.addEventListener('click', function () {
+          var open = !sb.classList.contains('open')
+          sb.classList.toggle('open', open)
+          sbToggle.setAttribute('aria-expanded', open)
+          backdrop.classList.toggle('show', open)
+        })
+      }
+      backdrop.addEventListener('click', closeSb)
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeSb()
+      })
+
+      /* ——— Scrollspy: sidebar + mini TOC ——— */
+      var navLinks = Array.prototype.slice.call(document.querySelectorAll('.docs-nav-link'))
+      var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.docs-toc-link'))
+      var spyTargets = navLinks.map(function (a) {
+        var el = document.querySelector(a.getAttribute('href'))
+        return { link: a, el: el }
+      }).filter(function (t) { return t.el })
+      function onSpy () {
+        var pos = window.scrollY + 140
+        var current = spyTargets[0]
+        spyTargets.forEach(function (t) { if (t.el.offsetTop <= pos) current = t })
+        navLinks.forEach(function (a) { a.classList.toggle('active', a === current.link) })
+        tocLinks.forEach(function (a) {
+          var match = spyTargets.filter(function (t) { return t.link === a }).length
+          a.classList.toggle('active', !!match && a === current.link)
+        })
+      }
+      window.addEventListener('scroll', onSpy, { passive: true })
+      onSpy()
+
+      /* ——— Live sidebar search filter ——— */
+      var searchInput = document.querySelector('.docs-search-input')
+      if (searchInput) {
+        searchInput.addEventListener('input', function () {
+          var q = searchInput.value.trim().toLowerCase()
+          var any = false
+          document.querySelectorAll('.docs-nav-link').forEach(function (a) {
+            var hit = !q || a.textContent.toLowerCase().indexOf(q) !== -1
+            a.style.display = hit ? '' : 'none'
+            if (hit) any = true
+          })
+          document.querySelectorAll('.docs-nav-label, .docs-nav-side').forEach(function (l) {
+            l.style.display = q ? 'none' : ''
+          })
+        })
+        document.addEventListener('keydown', function (e) {
+          if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+            e.preventDefault()
+            searchInput.focus()
+          }
+        })
+      }
+
+      /* ——— Copy buttons ——— */
+      document.querySelectorAll('.code-block-copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var code = btn.closest('.code-block').querySelector('code')
+          if (!code) return
+          var text = code.innerText
+          function done () {
+            var old = btn.textContent
+            btn.textContent = 'Copied!'
+            setTimeout(function () { btn.textContent = old }, 1600)
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(done, done)
+          } else {
+            var ta = document.createElement('textarea')
+            ta.value = text
+            document.body.appendChild(ta)
+            ta.select()
+            try { document.execCommand('copy') } catch (err) {}
+            document.body.removeChild(ta)
+            done()
+          }
+        })
+      })
+    })()
+  </script>
+</body>
+</html>
