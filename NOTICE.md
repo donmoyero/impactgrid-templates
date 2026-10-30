@@ -1,6 +1,6 @@
 # Notice
 
-These 120 templates are based on open HTML templates originally created by **uiuxlabz** (https://github.com/uiuxlabz). ImpactGrid Business has rebranded the footers and removed the original credit lines. All rights reserved notices on this site refer to ImpactGrid Business's own additions only; they do not override the original authors' license terms.
+These 120 templates are based on open HTML templates originally created by **uiuxlabz** (https://github.com/uiuxlabz). ShopPlug has rebranded the footers and removed the original credit lines. All rights reserved notices on this site refer to ShopPlug's own additions only; they do not override the original authors' license terms.
 
 ## Before you sell or redistribute
 
